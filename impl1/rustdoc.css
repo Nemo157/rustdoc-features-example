@@ -567,6 +567,11 @@ em.stab p {
 	float: right;
 }
 
+.structfield .cfg-feature {
+	position: relative;
+	float: right;
+}
+
 .variants_table {
 	width: 100%;
 }
