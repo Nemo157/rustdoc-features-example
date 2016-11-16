@@ -1,0 +1,13 @@
+[package]
+name = "rustdoc-features-example"
+version = "0.1.0"
+authors = ["Wim Looman <wim@nemo157.com>"]
+
+[features]
+default = []
+foo = []
+bar = []
+copy = []
+clone = ["copy"]
+
+[dependencies]
