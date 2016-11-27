@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["foobar","A public function that is always included in the crate. (if the parent module is)"]],"struct":[["FooBar","A public struct that is always included in the crate. (if the parent module is)"]],"trait":[["FooBarTrait","A public trait that is always included in the crate. (if the parent module is)"]]});
