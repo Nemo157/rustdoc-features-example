@@ -1,5 +1,7 @@
 (function() {var implementors = {};
+implementors["aho_corasick"] = [];
 implementors["diesel"] = [];
+implementors["quickcheck"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

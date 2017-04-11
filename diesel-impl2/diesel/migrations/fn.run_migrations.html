@@ -9,6 +9,7 @@
 
     <title>diesel::migrations::run_migrations - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc fn">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -42,13 +43,13 @@
         </form>
     </nav>
 
-    <section id='main' class="content fn">
-<h1 class='fqn'><span class='in-band'>Function <a href='../index.html'>diesel</a>::<wbr><a href='index.html'>migrations</a>::<wbr><a class='fn' href=''>run_migrations</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Function <a href='../index.html'>diesel</a>::<wbr><a href='index.html'>migrations</a>::<wbr><a class="fn" href=''>run_migrations</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-3980' class='srclink' href='../../src/diesel/src/migrations/mod.rs.html#198-219' title='goto source code'>[src]</a></span></h1>
-<pre class='rust fn'>pub fn run_migrations&lt;Conn, List, M&gt;(conn: &amp;Conn,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; migrations: List,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output: &amp;mut <a class='trait' href='https://doc.rust-lang.org/nightly/std/io/trait.Write.html' title='std::io::Write'>Write</a>)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='enum' href='../../diesel/migrations/enum.RunMigrationsError.html' title='diesel::migrations::RunMigrationsError'>RunMigrationsError</a>&gt; <span class='where'>where Conn: <a class='trait' href='../../diesel/migrations/trait.MigrationConnection.html' title='diesel::migrations::MigrationConnection'>MigrationConnection</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;List: <a class='trait' href='https://doc.rust-lang.org/nightly/core/iter/traits/trait.IntoIterator.html' title='core::iter::traits::IntoIterator'>IntoIterator</a>&lt;Item=M&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M: <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Deref.html' title='core::ops::Deref'>Deref</a>&lt;Target=<a class='trait' href='../../diesel/migrations/trait.Migration.html' title='diesel::migrations::Migration'>Migration</a>&gt;</span></pre><div class='docblock'><p>Run all pending migrations in the given list. Apps should likely be calling
+               </span><a class='srclink' href='../../src/diesel/migrations/mod.rs.html#198-219' title='goto source code'>[src]</a></span></h1>
+<pre class='rust fn'>pub fn run_migrations&lt;Conn, List, M&gt;(<br>&nbsp;&nbsp;&nbsp;&nbsp;conn: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Conn, <br>&nbsp;&nbsp;&nbsp;&nbsp;migrations: List, <br>&nbsp;&nbsp;&nbsp;&nbsp;output: &amp;mut <a class="trait" href="https://doc.rust-lang.org/nightly/std/io/trait.Write.html" title="trait std::io::Write">Write</a><br>) -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>, <a class="enum" href="../../diesel/migrations/enum.RunMigrationsError.html" title="enum diesel::migrations::RunMigrationsError">RunMigrationsError</a>&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;Conn: <a class="trait" href="../../diesel/migrations/trait.MigrationConnection.html" title="trait diesel::migrations::MigrationConnection">MigrationConnection</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;List: <a class="trait" href="https://doc.rust-lang.org/nightly/core/iter/traits/trait.IntoIterator.html" title="trait core::iter::traits::IntoIterator">IntoIterator</a>&lt;Item = M&gt;,<br>&nbsp;&nbsp;&nbsp;&nbsp;M: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/deref/trait.Deref.html" title="trait core::ops::deref::Deref">Deref</a>&lt;Target = <a class="trait" href="../../diesel/migrations/trait.Migration.html" title="trait diesel::migrations::Migration">Migration</a>&gt;,&nbsp;</span></pre><div class='docblock'><p>Run all pending migrations in the given list. Apps should likely be calling
 <code>run_pending_migrations</code> or <code>run_pending_migrations_in_directory</code> instead.</p>
 </div></section>
     <section id='search' class="content hidden"></section>
@@ -107,7 +108,6 @@
         window.rootPath = "../../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     <script defer src="../../search-index.js"></script>
 </body>

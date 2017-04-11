@@ -1,5 +1,6 @@
 (function() {var implementors = {};
 implementors["diesel"] = [];
+implementors["quickcheck"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

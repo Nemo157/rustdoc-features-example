@@ -9,6 +9,7 @@
 
     <title>diesel::expression::dsl - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc mod">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../../index.html'>diesel</a>::<wbr><a href='../index.html'>expression</a></p><script>window.sidebarCurrent = {name: 'dsl', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+        <p class='location'>Module dsl</p><div class="block items"><ul><li><a href="#reexports">Reexports</a></li><li><a href="#structs">Structs</a></li><li><a href="#functions">Functions</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'><a href='../../index.html'>diesel</a>::<wbr><a href='../index.html'>expression</a></p><script>window.sidebarCurrent = {name: 'dsl', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,21 +43,21 @@
         </form>
     </nav>
 
-    <section id='main' class="content mod">
-<h1 class='fqn'><span class='in-band'>Module <a href='../../index.html'>diesel</a>::<wbr><a href='../index.html'>expression</a>::<wbr><a class='mod' href=''>dsl</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Module <a href='../../index.html'>diesel</a>::<wbr><a href='../index.html'>expression</a>::<wbr><a class="mod" href=''>dsl</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-703' class='srclink' href='../../../src/diesel/src/expression/mod.rs.html#44-53' title='goto source code'>[src]</a></span></h1>
+               </span><a class='srclink' href='../../../src/diesel/expression/mod.rs.html#44-53' title='goto source code'>[src]</a></span></h1>
 <div class='docblock'><p>Reexports various top level functions and core extensions that are too
 generic to export by default. This module exists to conveniently glob import
 in functions where you need them.</p>
 </div><h2 id='reexports' class='section-header'><a href="#reexports">Reexports</a></h2>
-<table><tr><td><code>pub use pg::expression::<a class='mod' href='../../../diesel/pg/expression/dsl/index.html' title='diesel::pg::expression::dsl'>dsl</a>::*;</code></td></tr></table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table><tr><td><code>pub use pg::expression::<a class="mod" href="../../../diesel/pg/expression/dsl/index.html" title="mod diesel::pg::expression::dsl">dsl</a>::*;</code></td></tr></table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Avg.html'
-                                  title='diesel::expression::dsl::Avg'>Avg</a></td>
+                           <td><a class="struct" href="struct.Avg.html"
+                                  title='struct diesel::expression::dsl::Avg'>Avg</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -65,8 +66,8 @@ in functions where you need them.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Max.html'
-                                  title='diesel::expression::dsl::Max'>Max</a></td>
+                           <td><a class="struct" href="struct.Max.html"
+                                  title='struct diesel::expression::dsl::Max'>Max</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -75,8 +76,8 @@ in functions where you need them.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Min.html'
-                                  title='diesel::expression::dsl::Min'>Min</a></td>
+                           <td><a class="struct" href="struct.Min.html"
+                                  title='struct diesel::expression::dsl::Min'>Min</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -85,8 +86,8 @@ in functions where you need them.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Sum.html'
-                                  title='diesel::expression::dsl::Sum'>Sum</a></td>
+                           <td><a class="struct" href="struct.Sum.html"
+                                  title='struct diesel::expression::dsl::Sum'>Sum</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -95,8 +96,8 @@ in functions where you need them.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.now.html'
-                                  title='diesel::expression::dsl::now'>now</a></td>
+                           <td><a class="struct" href="struct.now.html"
+                                  title='struct diesel::expression::dsl::now'>now</a></td>
                            <td class='docblock-short'>
                                 <p>Represents the SQL CURRENT_TIMESTAMP constant. This is equivalent to the
 <code>NOW()</code> function on backends that support it.</p>
@@ -107,8 +108,8 @@ in functions where you need them.</p>
                        </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.avg.html'
-                                  title='diesel::expression::dsl::avg'>avg</a></td>
+                           <td><a class="fn" href="fn.avg.html"
+                                  title='fn diesel::expression::dsl::avg'>avg</a></td>
                            <td class='docblock-short'>
                                 <p>Represents a SQL <code>AVG</code> function. This function can only take types which are
 Foldable.</p>
@@ -118,8 +119,8 @@ Foldable.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.count.html'
-                                  title='diesel::expression::dsl::count'>count</a></td>
+                           <td><a class="fn" href="fn.count.html"
+                                  title='fn diesel::expression::dsl::count'>count</a></td>
                            <td class='docblock-short'>
                                 <p>Creates a SQL <code>COUNT</code> expression</p>
                                <span class='out-of-band'>
@@ -128,8 +129,8 @@ Foldable.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.count_star.html'
-                                  title='diesel::expression::dsl::count_star'>count_star</a></td>
+                           <td><a class="fn" href="fn.count_star.html"
+                                  title='fn diesel::expression::dsl::count_star'>count_star</a></td>
                            <td class='docblock-short'>
                                 <p>Creates a SQL <code>COUNT(*)</code> expression</p>
                                <span class='out-of-band'>
@@ -138,8 +139,8 @@ Foldable.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.date.html'
-                                  title='diesel::expression::dsl::date'>date</a></td>
+                           <td><a class="fn" href="fn.date.html"
+                                  title='fn diesel::expression::dsl::date'>date</a></td>
                            <td class='docblock-short'>
                                 <p>Represents the SQL DATE() function. The argument should be a Timestamp
 expression, and the return value will be an expression of type Date</p>
@@ -149,8 +150,8 @@ expression, and the return value will be an expression of type Date</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.max.html'
-                                  title='diesel::expression::dsl::max'>max</a></td>
+                           <td><a class="fn" href="fn.max.html"
+                                  title='fn diesel::expression::dsl::max'>max</a></td>
                            <td class='docblock-short'>
                                 <p>Represents a SQL <code>MAX</code> function. This function can only take types which are
 ordered.</p>
@@ -160,8 +161,8 @@ ordered.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.min.html'
-                                  title='diesel::expression::dsl::min'>min</a></td>
+                           <td><a class="fn" href="fn.min.html"
+                                  title='fn diesel::expression::dsl::min'>min</a></td>
                            <td class='docblock-short'>
                                 <p>Represents a SQL <code>MIN</code> function. This function can only take types which are
 ordered.</p>
@@ -171,8 +172,8 @@ ordered.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.sql.html'
-                                  title='diesel::expression::dsl::sql'>sql</a></td>
+                           <td><a class="fn" href="fn.sql.html"
+                                  title='fn diesel::expression::dsl::sql'>sql</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -181,8 +182,8 @@ ordered.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.sum.html'
-                                  title='diesel::expression::dsl::sum'>sum</a></td>
+                           <td><a class="fn" href="fn.sum.html"
+                                  title='fn diesel::expression::dsl::sum'>sum</a></td>
                            <td class='docblock-short'>
                                 <p>Represents a SQL <code>SUM</code> function. This function can only take types which are
 Foldable.</p>
@@ -193,8 +194,8 @@ Foldable.</p>
                        </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='type' href='type.date.html'
-                                  title='diesel::expression::dsl::date'>date</a></td>
+                           <td><a class="type" href="type.date.html"
+                                  title='type diesel::expression::dsl::date'>date</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -258,7 +259,6 @@ Foldable.</p>
         window.rootPath = "../../../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../../../jquery.js"></script>
     <script src="../../../main.js"></script>
     <script defer src="../../../search-index.js"></script>
 </body>

@@ -9,6 +9,7 @@
 
     <title>diesel::debug_sql - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc macro">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -42,24 +43,24 @@
         </form>
     </nav>
 
-    <section id='main' class="content macro">
-<h1 class='fqn'><span class='in-band'>Macro <a href='index.html'>diesel</a>::<wbr><a class='macro' href=''>debug_sql</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Macro <a href='index.html'>diesel</a>::<wbr><a class="macro" href=''>debug_sql</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-4699' class='srclink' href='../src/diesel/src/macros/mod.rs.html#515-523' title='goto source code'>[src]</a></span></h1>
-<pre class='rust macro'>
-<span class='macro'>macro_rules</span><span class='macro'>!</span> <span class='ident'>debug_sql</span> {
-    (<span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>query</span>:<span class='ident'>expr</span>) <span class='op'>=&gt;</span> { ... };
+               </span><a class='srclink' href='../src/diesel/macros/mod.rs.html#526-534' title='goto source code'>[src]</a></span></h1>
+<pre class="rust macro">
+<span class="macro">macro_rules</span><span class="macro">!</span> <span class="ident">debug_sql</span> {
+    (<span class="macro-nonterminal">$</span><span class="macro-nonterminal">query</span>:<span class="ident">expr</span>) <span class="op">=&gt;</span> { ... };
 }</pre>
 <div class='docblock'><p>Takes a query QueryFragment expression as an argument and returns a string
 of SQL with placeholders for the dynamic values.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
 <h3 id='returning-sql-from-a-count-statment' class='section-header'><a href='#returning-sql-from-a-count-statment'>Returning SQL from a count statment:</a></h3>
-<pre class='rust rust-example-rendered'>
-<span class='kw'>let</span> <span class='ident'>sql</span> <span class='op'>=</span> <span class='macro'>debug_sql</span><span class='macro'>!</span>(<span class='ident'>users</span>.<span class='ident'>count</span>());
-<span class='macro'>assert_eq</span><span class='macro'>!</span>(<span class='ident'>sql</span>, <span class='string'>&quot;SELECT COUNT(*) FROM `users`&quot;</span>);</pre>
+<pre class="rust rust-example-rendered">
+<span class="kw">let</span> <span class="ident">sql</span> <span class="op">=</span> <span class="macro">debug_sql</span><span class="macro">!</span>(<span class="ident">users</span>.<span class="ident">count</span>());
+<span class="macro">assert_eq</span><span class="macro">!</span>(<span class="ident">sql</span>, <span class="string">&quot;SELECT COUNT(*) FROM `users`&quot;</span>);</pre>
 </div></section>
     <section id='search' class="content hidden"></section>
 
@@ -117,7 +118,6 @@ of SQL with placeholders for the dynamic values.</p>
         window.rootPath = "../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     <script defer src="../search-index.js"></script>
 </body>

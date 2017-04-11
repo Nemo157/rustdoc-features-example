@@ -9,6 +9,7 @@
 
     <title>diesel::pg::types::date_and_time - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc mod">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../../../index.html'>diesel</a>::<wbr><a href='../../index.html'>pg</a>::<wbr><a href='../index.html'>types</a></p><script>window.sidebarCurrent = {name: 'date_and_time', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+        <p class='location'>Module date_and_time</p><div class="block items"><ul><li><a href="#structs">Structs</a></li></ul></div><p class='location'><a href='../../../index.html'>diesel</a>::<wbr><a href='../../index.html'>pg</a>::<wbr><a href='../index.html'>types</a></p><script>window.sidebarCurrent = {name: 'date_and_time', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,60 +43,60 @@
         </form>
     </nav>
 
-    <section id='main' class="content mod">
-<h1 class='fqn'><span class='in-band'>Module <a href='../../../index.html'>diesel</a>::<wbr><a href='../../index.html'>pg</a>::<wbr><a href='../index.html'>types</a>::<wbr><a class='mod' href=''>date_and_time</a></span><span class='out-of-band'><div class='cfg-feature' title='Requires feature postgres'>postgres</div><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Module <a href='../../../index.html'>diesel</a>::<wbr><a href='../../index.html'>pg</a>::<wbr><a href='../index.html'>types</a>::<wbr><a class="mod" href=''>date_and_time</a></span><span class='out-of-band'><div class='cfg-feature' title='Requires feature postgres'>postgres</div><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-2976' class='srclink' href='../../../../src/diesel/src/pg/types/date_and_time/mod.rs.html#1-189' title='goto source code'>[src]</a></span></h1>
+               </span><a class='srclink' href='../../../../src/diesel/pg/types/date_and_time/mod.rs.html#1-189' title='goto source code'>[src]</a></span></h1>
 <h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.PgDate.html'
-                                  title='diesel::pg::types::date_and_time::PgDate'>PgDate</a></td>
+                           <td><a class="struct" href="struct.PgDate.html"
+                                  title='struct diesel::pg::types::date_and_time::PgDate'>PgDate</a></td>
                            <td class='docblock-short'>
                                 <p>Dates are represented in Postgres as a 32 bit signed integer representing the number of julian
 days since January 1st 2000. This struct is a dumb wrapper type, meant only to indicate the
 integer&#39;s meaning.</p>
                                <span class='out-of-band'>
-                                   <div class='cfg-feature' title='Requires feature postgres'>postgres</div>
+                                   
                                </span>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.PgInterval.html'
-                                  title='diesel::pg::types::date_and_time::PgInterval'>PgInterval</a></td>
+                           <td><a class="struct" href="struct.PgInterval.html"
+                                  title='struct diesel::pg::types::date_and_time::PgInterval'>PgInterval</a></td>
                            <td class='docblock-short'>
                                 <p>Intervals in Postgres are separated into 3 parts. A 64 bit integer representing time in
 microseconds, a 32 bit integer representing number of minutes, and a 32 bit integer
 representing number of months. This struct is a dumb wrapper type, meant only to indicate the
 meaning of these parts.</p>
                                <span class='out-of-band'>
-                                   <div class='cfg-feature' title='Requires feature postgres'>postgres</div>
+                                   
                                </span>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.PgTime.html'
-                                  title='diesel::pg::types::date_and_time::PgTime'>PgTime</a></td>
+                           <td><a class="struct" href="struct.PgTime.html"
+                                  title='struct diesel::pg::types::date_and_time::PgTime'>PgTime</a></td>
                            <td class='docblock-short'>
                                 <p>Time is represented in Postgres as a 64 bit signed integer representing the number of
 microseconds since midnight. This struct is a dumb wrapper type, meant only to indicate the
 integer&#39;s meaning.</p>
                                <span class='out-of-band'>
-                                   <div class='cfg-feature' title='Requires feature postgres'>postgres</div>
+                                   
                                </span>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.PgTimestamp.html'
-                                  title='diesel::pg::types::date_and_time::PgTimestamp'>PgTimestamp</a></td>
+                           <td><a class="struct" href="struct.PgTimestamp.html"
+                                  title='struct diesel::pg::types::date_and_time::PgTimestamp'>PgTimestamp</a></td>
                            <td class='docblock-short'>
                                 <p>Timestamps are represented in Postgres as a 64 bit signed integer representing the number of
 microseconds since January 1st 2000. This struct is a dumb wrapper type, meant only to indicate
 the integer&#39;s meaning.</p>
                                <span class='out-of-band'>
-                                   <div class='cfg-feature' title='Requires feature postgres'>postgres</div>
+                                   
                                </span>
                            </td>
                        </tr></table></section>
@@ -155,7 +156,6 @@ the integer&#39;s meaning.</p>
         window.rootPath = "../../../../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../../../../jquery.js"></script>
     <script src="../../../../main.js"></script>
     <script defer src="../../../../search-index.js"></script>
 </body>

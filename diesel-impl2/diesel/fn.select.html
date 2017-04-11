@@ -9,6 +9,7 @@
 
     <title>diesel::select - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc fn">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -42,13 +43,13 @@
         </form>
     </nav>
 
-    <section id='main' class="content fn">
-<h1 class='fqn'><span class='in-band'>Function <a href='index.html'>diesel</a>::<wbr><a class='fn' href=''>select</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Function <a href='index.html'>diesel</a>::<wbr><a class="fn" href=''>select</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-953' class='srclink' href='../src/diesel/src/query_builder/functions.rs.html#118-122' title='goto source code'>[src]</a></span></h1>
-<pre class='rust fn'>pub fn select&lt;T&gt;(expression: T) -&gt; SelectStatement&lt;T::SqlType, T, <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>&gt; <span class='where'>where T: <a class='trait' href='../diesel/expression/trait.Expression.html' title='diesel::expression::Expression'>Expression</a></span></pre><div class='docblock'><p>Creates a bare select statement, with no from clause. Primarily used for
+               </span><a class='srclink' href='../src/diesel/query_builder/functions.rs.html#118-122' title='goto source code'>[src]</a></span></h1>
+<pre class='rust fn'>pub fn select&lt;T&gt;(expression: T) -&gt; SelectStatement&lt;T::<a class="type" href="../diesel/expression/trait.Expression.html#associatedtype.SqlType" title="type diesel::expression::Expression::SqlType">SqlType</a>, T, <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;T: <a class="trait" href="../diesel/expression/trait.Expression.html" title="trait diesel::expression::Expression">Expression</a>,&nbsp;</span></pre><div class='docblock'><p>Creates a bare select statement, with no from clause. Primarily used for
 testing diesel itself, but likely useful for third party crates as well. The
 given expressions must be selectable from anywhere.</p>
 </div></section>
@@ -108,7 +109,6 @@ given expressions must be selectable from anywhere.</p>
         window.rootPath = "../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     <script defer src="../search-index.js"></script>
 </body>

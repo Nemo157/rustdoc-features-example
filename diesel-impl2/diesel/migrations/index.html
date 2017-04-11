@@ -9,6 +9,7 @@
 
     <title>diesel::migrations - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc mod">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../index.html'>diesel</a></p><script>window.sidebarCurrent = {name: 'migrations', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+        <p class='location'>Module migrations</p><div class="block items"><ul><li><a href="#enums">Enums</a></li><li><a href="#traits">Traits</a></li><li><a href="#functions">Functions</a></li></ul></div><p class='location'><a href='../index.html'>diesel</a></p><script>window.sidebarCurrent = {name: 'migrations', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,12 +43,12 @@
         </form>
     </nav>
 
-    <section id='main' class="content mod">
-<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>diesel</a>::<wbr><a class='mod' href=''>migrations</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>diesel</a>::<wbr><a class="mod" href=''>migrations</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-3778' class='srclink' href='../../src/diesel/src/migrations/mod.rs.html#1-306' title='goto source code'>[src]</a></span></h1>
+               </span><a class='srclink' href='../../src/diesel/migrations/mod.rs.html#1-306' title='goto source code'>[src]</a></span></h1>
 <div class='docblock'><p>Provides functions for maintaining database schema.</p>
 
 <p>A database migration always provides procedures to update the schema, as well as to revert
@@ -102,8 +103,8 @@ DROP TABLE posts;
 </div><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='enum' href='enum.MigrationError.html'
-                                  title='diesel::migrations::MigrationError'>MigrationError</a></td>
+                           <td><a class="enum" href="enum.MigrationError.html"
+                                  title='enum diesel::migrations::MigrationError'>MigrationError</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -112,8 +113,8 @@ DROP TABLE posts;
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='enum' href='enum.RunMigrationsError.html'
-                                  title='diesel::migrations::RunMigrationsError'>RunMigrationsError</a></td>
+                           <td><a class="enum" href="enum.RunMigrationsError.html"
+                                  title='enum diesel::migrations::RunMigrationsError'>RunMigrationsError</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -123,8 +124,8 @@ DROP TABLE posts;
                        </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='trait' href='trait.Migration.html'
-                                  title='diesel::migrations::Migration'>Migration</a></td>
+                           <td><a class="trait" href="trait.Migration.html"
+                                  title='trait diesel::migrations::Migration'>Migration</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -133,8 +134,8 @@ DROP TABLE posts;
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='trait' href='trait.MigrationConnection.html'
-                                  title='diesel::migrations::MigrationConnection'>MigrationConnection</a></td>
+                           <td><a class="trait" href="trait.MigrationConnection.html"
+                                  title='trait diesel::migrations::MigrationConnection'>MigrationConnection</a></td>
                            <td class='docblock-short'>
                                 <p>A connection which can be passed to the migration methods. This exists only
 to wrap up some constraints which are meant to hold for <em>all</em> connections.
@@ -147,8 +148,8 @@ should be useable where this trait is required.</p>
                        </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.find_migrations_directory.html'
-                                  title='diesel::migrations::find_migrations_directory'>find_migrations_directory</a></td>
+                           <td><a class="fn" href="fn.find_migrations_directory.html"
+                                  title='fn diesel::migrations::find_migrations_directory'>find_migrations_directory</a></td>
                            <td class='docblock-short'>
                                 <p>Returns the directory containing migrations. Will look at for
 $PWD/migrations. If it is not found, it will search the parents of the
@@ -160,8 +161,8 @@ current directory, until it reaches the root directory.  Returns
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.migration_from.html'
-                                  title='diesel::migrations::migration_from'>migration_from</a></td>
+                           <td><a class="fn" href="fn.migration_from.html"
+                                  title='fn diesel::migrations::migration_from'>migration_from</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -170,8 +171,8 @@ current directory, until it reaches the root directory.  Returns
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.revert_latest_migration.html'
-                                  title='diesel::migrations::revert_latest_migration'>revert_latest_migration</a></td>
+                           <td><a class="fn" href="fn.revert_latest_migration.html"
+                                  title='fn diesel::migrations::revert_latest_migration'>revert_latest_migration</a></td>
                            <td class='docblock-short'>
                                 <p>Reverts the last migration that was run. Returns the version that was reverted. Returns an
 <code>Err</code> if no migrations have ever been run.</p>
@@ -181,8 +182,8 @@ current directory, until it reaches the root directory.  Returns
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.run_migrations.html'
-                                  title='diesel::migrations::run_migrations'>run_migrations</a></td>
+                           <td><a class="fn" href="fn.run_migrations.html"
+                                  title='fn diesel::migrations::run_migrations'>run_migrations</a></td>
                            <td class='docblock-short'>
                                 <p>Run all pending migrations in the given list. Apps should likely be calling
 <code>run_pending_migrations</code> or <code>run_pending_migrations_in_directory</code> instead.</p>
@@ -192,8 +193,8 @@ current directory, until it reaches the root directory.  Returns
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.run_pending_migrations.html'
-                                  title='diesel::migrations::run_pending_migrations'>run_pending_migrations</a></td>
+                           <td><a class="fn" href="fn.run_pending_migrations.html"
+                                  title='fn diesel::migrations::run_pending_migrations'>run_pending_migrations</a></td>
                            <td class='docblock-short'>
                                 <p>Runs all migrations that have not yet been run. This function will print all progress to
 stdout. This function will return an <code>Err</code> if some error occurs reading the migrations, or if
@@ -205,8 +206,8 @@ may be committed, even if a later migration fails to run.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.search_for_migrations_directory.html'
-                                  title='diesel::migrations::search_for_migrations_directory'>search_for_migrations_directory</a></td>
+                           <td><a class="fn" href="fn.search_for_migrations_directory.html"
+                                  title='fn diesel::migrations::search_for_migrations_directory'>search_for_migrations_directory</a></td>
                            <td class='docblock-short'>
                                 <p>Searches for the migrations directory relative to the given path. See
 <code>find_migrations_directory</code> for more details.</p>
@@ -271,7 +272,6 @@ may be committed, even if a later migration fails to run.</p>
         window.rootPath = "../../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     <script defer src="../../search-index.js"></script>
 </body>

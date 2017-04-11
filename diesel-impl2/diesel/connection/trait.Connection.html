@@ -9,6 +9,7 @@
 
     <title>diesel::connection::Connection - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc trait">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../index.html'>diesel</a>::<wbr><a href='index.html'>connection</a></p><script>window.sidebarCurrent = {name: 'Connection', ty: 'trait', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+        <p class='location'>Trait Connection</p><div class="block items"><ul><li><a href="#associated-types">Associated Types</a></li><li><a href="#required-methods">Required Methods</a></li><li><a href="#provided-methods">Provided Methods</a></li><li><a href="#implementors">Implementors</a></li></ul></div><p class='location'><a href='../index.html'>diesel</a>::<wbr><a href='index.html'>connection</a></p><script>window.sidebarCurrent = {name: 'Connection', ty: 'trait', relpath: ''};</script><script defer src="sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,32 +43,40 @@
         </form>
     </nav>
 
-    <section id='main' class="content trait">
-<h1 class='fqn'><span class='in-band'>Trait <a href='../index.html'>diesel</a>::<wbr><a href='index.html'>connection</a>::<wbr><a class='trait' href=''>Connection</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Trait <a href='../index.html'>diesel</a>::<wbr><a href='index.html'>connection</a>::<wbr><a class="trait" href=''>Connection</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-122' class='srclink' href='../../src/diesel/src/connection/mod.rs.html#14-98' title='goto source code'>[src]</a></span></h1>
-<pre class='rust trait'>pub trait Connection: <a class='trait' href='../../diesel/connection/trait.SimpleConnection.html' title='diesel::connection::SimpleConnection'>SimpleConnection</a> + <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Sized.html' title='core::marker::Sized'>Sized</a> {
-    type <a href='#associatedtype.Backend' class='type'>Backend</a>: <a class='trait' href='../../diesel/backend/trait.Backend.html' title='diesel::backend::Backend'>Backend</a>;
-    fn <a href='#tymethod.establish' class='fnname'>establish</a>(database_url: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='type' href='../../diesel/result/type.ConnectionResult.html' title='diesel::result::ConnectionResult'>ConnectionResult</a>&lt;Self&gt;;
+               </span><a class='srclink' href='../../src/diesel/connection/mod.rs.html#14-98' title='goto source code'>[src]</a></span></h1>
+<pre class='rust trait'>pub trait Connection: <a class="trait" href="../../diesel/connection/trait.SimpleConnection.html" title="trait diesel::connection::SimpleConnection">SimpleConnection</a> + <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Sized.html" title="trait core::marker::Sized">Sized</a> {
+    type <a href='#associatedtype.Backend' class="type">Backend</a>: <a class="trait" href="../../diesel/backend/trait.Backend.html" title="trait diesel::backend::Backend">Backend</a>;
+    fn <a href='#tymethod.establish' class='fnname'>establish</a>(database_url: &amp;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>) -&gt; <a class="type" href="../../diesel/result/type.ConnectionResult.html" title="type diesel::result::ConnectionResult">ConnectionResult</a>&lt;Self&gt;;
 
-    fn <a href='#method.transaction' class='fnname'>transaction</a>&lt;T, E, F&gt;(&amp;self, f: F) -&gt; <a class='type' href='../../diesel/result/type.TransactionResult.html' title='diesel::result::TransactionResult'>TransactionResult</a>&lt;T, E&gt; <span class='where'>where F: <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.FnOnce.html' title='core::ops::FnOnce'>FnOnce</a>() -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;T, E&gt;</span> { ... }
-    fn <a href='#method.begin_test_transaction' class='fnname'>begin_test_transaction</a>(&amp;self) -&gt; <a class='type' href='../../diesel/result/type.QueryResult.html' title='diesel::result::QueryResult'>QueryResult</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>&gt; { ... }
-    fn <a href='#method.test_transaction' class='fnname'>test_transaction</a>&lt;T, E, F&gt;(&amp;self, f: F) -&gt; T <span class='where'>where F: <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.FnOnce.html' title='core::ops::FnOnce'>FnOnce</a>() -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;T, E&gt;</span> { ... }
+    fn <a href='#method.transaction' class='fnname'>transaction</a>&lt;T, E, F&gt;(&amp;self, f: F) -&gt; <a class="type" href="../../diesel/result/type.TransactionResult.html" title="type diesel::result::TransactionResult">TransactionResult</a>&lt;T, E&gt;<br>&nbsp;&nbsp;&nbsp; <span class="where">where<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>() -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;T, E&gt;</span>,
+    { ... }
+<div class='item-spacer'></div>    fn <a href='#method.begin_test_transaction' class='fnname'>begin_test_transaction</a>(&amp;self) -&gt; <a class="type" href="../../diesel/result/type.QueryResult.html" title="type diesel::result::QueryResult">QueryResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt; { ... }
+<div class='item-spacer'></div>    fn <a href='#method.test_transaction' class='fnname'>test_transaction</a>&lt;T, E, F&gt;(&amp;self, f: F) -&gt; T<br>&nbsp;&nbsp;&nbsp; <span class="where">where<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>() -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;T, E&gt;</span>,
+    { ... }
 }</pre>
-            <h2 id='associated-types'>Associated Types</h2>
+            <h2 id='associated-types' class='small-section-header'>
+              Associated Types<a href='#associated-types' class='anchor'></a>
+            </h2>
             <div class='methods'>
-        <h3 id='associatedtype.Backend' class='method stab '><span id='Backend.t' class='invisible'><code>type <a href='#associatedtype.Backend' class='type'>Backend</a>: <a class='trait' href='../../diesel/backend/trait.Backend.html' title='diesel::backend::Backend'>Backend</a></code><span class='out-of-band'></span></span></h3></div>
-            <h2 id='required-methods'>Required Methods</h2>
+        <h3 id='associatedtype.Backend' class='method'><span id='Backend.t' class='invisible'><code>type <a href='#associatedtype.Backend' class="type">Backend</a>: <a class="trait" href="../../diesel/backend/trait.Backend.html" title="trait diesel::backend::Backend">Backend</a></code><span class='out-of-band'></span></span></h3></div>
+            <h2 id='required-methods' class='small-section-header'>
+              Required Methods<a href='#required-methods' class='anchor'></a>
+            </h2>
             <div class='methods'>
-        <h3 id='tymethod.establish' class='method stab '><span id='establish.v' class='invisible'><code>fn <a href='#tymethod.establish' class='fnname'>establish</a>(database_url: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='type' href='../../diesel/result/type.ConnectionResult.html' title='diesel::result::ConnectionResult'>ConnectionResult</a>&lt;Self&gt;</code><span class='out-of-band'></span></span></h3><div class='docblock'><p>Establishes a new connection to the database at the given URL. The URL
+        <h3 id='tymethod.establish' class='method'><span id='establish.v' class='invisible'><code>fn <a href='#tymethod.establish' class='fnname'>establish</a>(database_url: &amp;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>) -&gt; <a class="type" href="../../diesel/result/type.ConnectionResult.html" title="type diesel::result::ConnectionResult">ConnectionResult</a>&lt;Self&gt;</code><span class='out-of-band'></span></span></h3><div class='docblock'><p>Establishes a new connection to the database at the given URL. The URL
 should be a valid connection string for a given backend. See the
 documentation for the specific backend for specifics.</p>
 </div></div>
-            <h2 id='provided-methods'>Provided Methods</h2>
+            <h2 id='provided-methods' class='small-section-header'>
+              Provided Methods<a href='#provided-methods' class='anchor'></a>
+            </h2>
             <div class='methods'>
-        <h3 id='method.transaction' class='method stab '><span id='transaction.v' class='invisible'><code>fn <a href='#method.transaction' class='fnname'>transaction</a>&lt;T, E, F&gt;(&amp;self, f: F) -&gt; <a class='type' href='../../diesel/result/type.TransactionResult.html' title='diesel::result::TransactionResult'>TransactionResult</a>&lt;T, E&gt; <span class='where'>where F: <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.FnOnce.html' title='core::ops::FnOnce'>FnOnce</a>() -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;T, E&gt;</span></code><span class='out-of-band'></span></span></h3><div class='docblock'><p>Executes the given function inside of a database transaction. When
+        <h3 id='method.transaction' class='method'><span id='transaction.v' class='invisible'><code>fn <a href='#method.transaction' class='fnname'>transaction</a>&lt;T, E, F&gt;(&amp;self, f: F) -&gt; <a class="type" href="../../diesel/result/type.TransactionResult.html" title="type diesel::result::TransactionResult">TransactionResult</a>&lt;T, E&gt; <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>() -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;T, E&gt;,&nbsp;</span></code><span class='out-of-band'></span></span></h3><div class='docblock'><p>Executes the given function inside of a database transaction. When
 a transaction is already occurring, savepoints will be used to emulate a nested
 transaction.</p>
 
@@ -75,16 +84,18 @@ transaction.</p>
 function returns an <code>Err</code>,
 <a href="result/enum.TransactionError.html#variant.UserReturnedError"><code>TransactionError::UserReturnedError</code></a>
 will be returned wrapping that value.</p>
-</div><h3 id='method.begin_test_transaction' class='method stab '><span id='begin_test_transaction.v' class='invisible'><code>fn <a href='#method.begin_test_transaction' class='fnname'>begin_test_transaction</a>(&amp;self) -&gt; <a class='type' href='../../diesel/result/type.QueryResult.html' title='diesel::result::QueryResult'>QueryResult</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>&gt;</code><span class='out-of-band'></span></span></h3><div class='docblock'><p>Creates a transaction that will never be committed. This is useful for
+</div><h3 id='method.begin_test_transaction' class='method'><span id='begin_test_transaction.v' class='invisible'><code>fn <a href='#method.begin_test_transaction' class='fnname'>begin_test_transaction</a>(&amp;self) -&gt; <a class="type" href="../../diesel/result/type.QueryResult.html" title="type diesel::result::QueryResult">QueryResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.tuple.html">()</a>&gt;</code><span class='out-of-band'></span></span></h3><div class='docblock'><p>Creates a transaction that will never be committed. This is useful for
 tests. Panics if called while inside of a transaction.</p>
-</div><h3 id='method.test_transaction' class='method stab '><span id='test_transaction.v' class='invisible'><code>fn <a href='#method.test_transaction' class='fnname'>test_transaction</a>&lt;T, E, F&gt;(&amp;self, f: F) -&gt; T <span class='where'>where F: <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.FnOnce.html' title='core::ops::FnOnce'>FnOnce</a>() -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;T, E&gt;</span></code><span class='out-of-band'></span></span></h3><div class='docblock'><p>Executes the given function inside a transaction, but does not commit
+</div><h3 id='method.test_transaction' class='method'><span id='test_transaction.v' class='invisible'><code>fn <a href='#method.test_transaction' class='fnname'>test_transaction</a>&lt;T, E, F&gt;(&amp;self, f: F) -&gt; T <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;F: <a class="trait" href="https://doc.rust-lang.org/nightly/core/ops/function/trait.FnOnce.html" title="trait core::ops::function::FnOnce">FnOnce</a>() -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;T, E&gt;,&nbsp;</span></code><span class='out-of-band'></span></span></h3><div class='docblock'><p>Executes the given function inside a transaction, but does not commit
 it. Panics if the given function returns an <code>Err</code>.</p>
 </div></div>
-        <h2 id='implementors'>Implementors</h2>
+        <h2 id='implementors' class='small-section-header'>
+          Implementors<a href='#implementors' class='anchor'></a>
+        </h2>
         <ul class='item-list' id='implementors-list'>
-    <li><code>impl Connection for <a class='struct' href='../../diesel/pg/struct.PgConnection.html' title='diesel::pg::PgConnection'>PgConnection</a></code><span class='out-of-band'>
+    <li><code>impl Connection for <a class="struct" href="../../diesel/pg/struct.PgConnection.html" title="struct diesel::pg::PgConnection">PgConnection</a><span class="where fmt-newline">  type <a href='#associatedtype.Backend' class="type">Backend</a> = <a class="struct" href="../../diesel/pg/struct.Pg.html" title="struct diesel::pg::Pg">Pg</a>;</span></code><span class='out-of-band'>
 <div class='cfg-feature' title='Requires feature postgres'>postgres</div></span></li>
-<li><code>impl Connection for <a class='struct' href='../../diesel/sqlite/struct.SqliteConnection.html' title='diesel::sqlite::SqliteConnection'>SqliteConnection</a></code><span class='out-of-band'>
+<li><code>impl Connection for <a class="struct" href="../../diesel/sqlite/struct.SqliteConnection.html" title="struct diesel::sqlite::SqliteConnection">SqliteConnection</a><span class="where fmt-newline">  type <a href='#associatedtype.Backend' class="type">Backend</a> = <a class="struct" href="../../diesel/sqlite/struct.Sqlite.html" title="struct diesel::sqlite::Sqlite">Sqlite</a>;</span></code><span class='out-of-band'>
 <div class='cfg-feature' title='Requires feature sqlite'>sqlite</div></span></li>
 </ul><script type="text/javascript" async
                          src="../../implementors/diesel/connection/trait.Connection.js">
@@ -145,7 +156,6 @@ it. Panics if the given function returns an <code>Err</code>.</p>
         window.rootPath = "../../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     <script defer src="../../search-index.js"></script>
 </body>

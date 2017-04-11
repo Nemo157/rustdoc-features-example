@@ -9,6 +9,7 @@
 
     <title>diesel::prelude::ExecuteDsl - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc trait">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../index.html'>diesel</a>::<wbr><a href='index.html'>prelude</a></p><script>window.sidebarCurrent = {name: 'ExecuteDsl', ty: 'trait', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+        <p class='location'>Trait ExecuteDsl</p><div class="block items"><ul><li><a href="#provided-methods">Provided Methods</a></li><li><a href="#implementors">Implementors</a></li></ul></div><p class='location'><a href='../index.html'>diesel</a>::<wbr><a href='index.html'>prelude</a></p><script>window.sidebarCurrent = {name: 'ExecuteDsl', ty: 'trait', relpath: ''};</script><script defer src="sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,25 +43,29 @@
         </form>
     </nav>
 
-    <section id='main' class="content trait">
-<h1 class='fqn'><span class='in-band'>Trait <a href='../index.html'>diesel</a>::<wbr><a href='index.html'>prelude</a>::<wbr><a class='trait' href=''>ExecuteDsl</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Trait <a href='../index.html'>diesel</a>::<wbr><a href='index.html'>prelude</a>::<wbr><a class="trait" href=''>ExecuteDsl</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-4137' class='srclink' href='../../src/diesel/src/query_dsl/load_dsl.rs.html#63-71' title='goto source code'>[src]</a></span></h1>
-<pre class='rust trait'>pub trait ExecuteDsl&lt;Conn:&nbsp;<a class='trait' href='../../diesel/connection/trait.Connection.html' title='diesel::connection::Connection'>Connection</a>&gt;: <a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Sized.html' title='core::marker::Sized'>Sized</a> + <a class='trait' href='../../diesel/query_builder/trait.QueryFragment.html' title='diesel::query_builder::QueryFragment'>QueryFragment</a>&lt;Conn::Backend&gt; + <a class='trait' href='../../diesel/query_builder/trait.QueryId.html' title='diesel::query_builder::QueryId'>QueryId</a> {
-    fn <a href='#method.execute' class='fnname'>execute</a>(&amp;self, conn: &amp;Conn) -&gt; <a class='type' href='../../diesel/result/type.QueryResult.html' title='diesel::result::QueryResult'>QueryResult</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>&gt; { ... }
+               </span><a class='srclink' href='../../src/diesel/query_dsl/load_dsl.rs.html#63-71' title='goto source code'>[src]</a></span></h1>
+<pre class='rust trait'>pub trait ExecuteDsl&lt;Conn:&nbsp;<a class="trait" href="../../diesel/connection/trait.Connection.html" title="trait diesel::connection::Connection">Connection</a>&gt;: <a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Sized.html" title="trait core::marker::Sized">Sized</a> + <a class="trait" href="../../diesel/query_builder/trait.QueryFragment.html" title="trait diesel::query_builder::QueryFragment">QueryFragment</a>&lt;Conn::<a class="type" href="../../diesel/connection/trait.Connection.html#associatedtype.Backend" title="type diesel::connection::Connection::Backend">Backend</a>&gt; + <a class="trait" href="../../diesel/query_builder/trait.QueryId.html" title="trait diesel::query_builder::QueryId">QueryId</a> {
+    fn <a href='#method.execute' class='fnname'>execute</a>(&amp;self, conn: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Conn) -&gt; <a class="type" href="../../diesel/result/type.QueryResult.html" title="type diesel::result::QueryResult">QueryResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.usize.html">usize</a>&gt; { ... }
 }</pre>
-            <h2 id='provided-methods'>Provided Methods</h2>
+            <h2 id='provided-methods' class='small-section-header'>
+              Provided Methods<a href='#provided-methods' class='anchor'></a>
+            </h2>
             <div class='methods'>
-        <h3 id='method.execute' class='method stab '><span id='execute.v' class='invisible'><code>fn <a href='#method.execute' class='fnname'>execute</a>(&amp;self, conn: &amp;Conn) -&gt; <a class='type' href='../../diesel/result/type.QueryResult.html' title='diesel::result::QueryResult'>QueryResult</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.usize.html'>usize</a>&gt;</code><span class='out-of-band'></span></span></h3><div class='docblock'><p>Executes the given command, returning the number of rows affected. Used
+        <h3 id='method.execute' class='method'><span id='execute.v' class='invisible'><code>fn <a href='#method.execute' class='fnname'>execute</a>(&amp;self, conn: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;</a>Conn) -&gt; <a class="type" href="../../diesel/result/type.QueryResult.html" title="type diesel::result::QueryResult">QueryResult</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.usize.html">usize</a>&gt;</code><span class='out-of-band'></span></span></h3><div class='docblock'><p>Executes the given command, returning the number of rows affected. Used
 in conjunction with
 <a href="../query_builder/fn.update.html"><code>update</code></a> and
 <a href="../query_builder/fn.delete.html"><code>delete</code></a></p>
 </div></div>
-        <h2 id='implementors'>Implementors</h2>
+        <h2 id='implementors' class='small-section-header'>
+          Implementors<a href='#implementors' class='anchor'></a>
+        </h2>
         <ul class='item-list' id='implementors-list'>
-    <li><code>impl&lt;Conn, T&gt; ExecuteDsl&lt;Conn&gt; for T <span class='where'>where Conn: <a class='trait' href='../../diesel/connection/trait.Connection.html' title='diesel::connection::Connection'>Connection</a>, T: <a class='trait' href='../../diesel/query_builder/trait.QueryFragment.html' title='diesel::query_builder::QueryFragment'>QueryFragment</a>&lt;Conn::Backend&gt; + <a class='trait' href='../../diesel/query_builder/trait.QueryId.html' title='diesel::query_builder::QueryId'>QueryId</a></span></code><span class='out-of-band'>
+    <li><code>impl&lt;Conn, T&gt; ExecuteDsl&lt;Conn&gt; for T <span class="where fmt-newline">where<br>&nbsp;&nbsp;&nbsp;&nbsp;Conn: <a class="trait" href="../../diesel/connection/trait.Connection.html" title="trait diesel::connection::Connection">Connection</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;T: <a class="trait" href="../../diesel/query_builder/trait.QueryFragment.html" title="trait diesel::query_builder::QueryFragment">QueryFragment</a>&lt;Conn::<a class="type" href="../../diesel/connection/trait.Connection.html#associatedtype.Backend" title="type diesel::connection::Connection::Backend">Backend</a>&gt; + <a class="trait" href="../../diesel/query_builder/trait.QueryId.html" title="trait diesel::query_builder::QueryId">QueryId</a>,&nbsp;</span></code><span class='out-of-band'>
 </span></li>
 </ul><script type="text/javascript" async
                          src="../../implementors/diesel/prelude/trait.ExecuteDsl.js">
@@ -121,7 +126,6 @@ in conjunction with
         window.rootPath = "../../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     <script defer src="../../search-index.js"></script>
 </body>

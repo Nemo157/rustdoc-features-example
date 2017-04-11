@@ -9,6 +9,7 @@
 
     <title>diesel::insert - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc fn">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -42,13 +43,13 @@
         </form>
     </nav>
 
-    <section id='main' class="content fn">
-<h1 class='fqn'><span class='in-band'>Function <a href='index.html'>diesel</a>::<wbr><a class='fn' href=''>insert</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Function <a href='index.html'>diesel</a>::<wbr><a class="fn" href=''>insert</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-949' class='srclink' href='../src/diesel/src/query_builder/functions.rs.html#111-113' title='goto source code'>[src]</a></span></h1>
-<pre class='rust fn'>pub fn insert&lt;'a, T:&nbsp;?<a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Sized.html' title='core::marker::Sized'>Sized</a>&gt;(records: &amp;'a T)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; <a class='struct' href='../diesel/query_builder/insert_statement/struct.IncompleteInsertStatement.html' title='diesel::query_builder::insert_statement::IncompleteInsertStatement'>IncompleteInsertStatement</a>&lt;&amp;'a T, <a class='struct' href='../diesel/query_builder/insert_statement/struct.Insert.html' title='diesel::query_builder::insert_statement::Insert'>Insert</a>&gt;</pre><div class='docblock'><p>Creates an insert statement. Will add the given data to a table. This
+               </span><a class='srclink' href='../src/diesel/query_builder/functions.rs.html#111-113' title='goto source code'>[src]</a></span></h1>
+<pre class='rust fn'>pub fn insert&lt;'a, T:&nbsp;?<a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Sized.html" title="trait core::marker::Sized">Sized</a>&gt;(<br>&nbsp;&nbsp;&nbsp;&nbsp;records: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;'a </a>T<br>) -&gt; <a class="struct" href="../diesel/query_builder/insert_statement/struct.IncompleteInsertStatement.html" title="struct diesel::query_builder::insert_statement::IncompleteInsertStatement">IncompleteInsertStatement</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;'a </a>T, <a class="struct" href="../diesel/query_builder/insert_statement/struct.Insert.html" title="struct diesel::query_builder::insert_statement::Insert">Insert</a>&gt;</pre><div class='docblock'><p>Creates an insert statement. Will add the given data to a table. This
 function is not exported by default. As with other commands, the resulting
 query can return the inserted rows if you choose.</p>
 </div></section>
@@ -108,7 +109,6 @@ query can return the inserted rows if you choose.</p>
         window.rootPath = "../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     <script defer src="../search-index.js"></script>
 </body>

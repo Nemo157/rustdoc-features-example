@@ -9,6 +9,7 @@
 
     <title>diesel::sqlite::query_builder::functions::insert_or_replace - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc fn">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -42,25 +43,25 @@
         </form>
     </nav>
 
-    <section id='main' class="content fn">
-<h1 class='fqn'><span class='in-band'>Function <a href='../../../index.html'>diesel</a>::<wbr><a href='../../index.html'>sqlite</a>::<wbr><a href='../index.html'>query_builder</a>::<wbr><a href='index.html'>functions</a>::<wbr><a class='fn' href=''>insert_or_replace</a></span><span class='out-of-band'><div class='cfg-feature' title='Requires feature sqlite'>sqlite</div><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Function <a href='../../../index.html'>diesel</a>::<wbr><a href='../../index.html'>sqlite</a>::<wbr><a href='../index.html'>query_builder</a>::<wbr><a href='index.html'>functions</a>::<wbr><a class="fn" href=''>insert_or_replace</a></span><span class='out-of-band'><div class='cfg-feature' title='Requires feature sqlite'>sqlite</div><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-3744' class='srclink' href='../../../../src/diesel/src/sqlite/query_builder/functions.rs.html#50-54' title='goto source code'>[src]</a></span></h1>
-<pre class='rust fn'>pub fn insert_or_replace&lt;'a, T:&nbsp;?<a class='trait' href='https://doc.rust-lang.org/nightly/core/marker/trait.Sized.html' title='core::marker::Sized'>Sized</a>&gt;(records: &amp;'a T)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&gt; <a class='struct' href='../../../../diesel/query_builder/insert_statement/struct.IncompleteInsertStatement.html' title='diesel::query_builder::insert_statement::IncompleteInsertStatement'>IncompleteInsertStatement</a>&lt;&amp;'a T, Or&lt;<a class='struct' href='../../../../diesel/query_builder/insert_statement/struct.Insert.html' title='diesel::query_builder::insert_statement::Insert'>Insert</a>, Replace&gt;&gt;</pre><div class='docblock'><p>Creates a SQLite <code>INSERT OR REPLACE</code> statement. If a constraint violation
+               </span><a class='srclink' href='../../../../src/diesel/sqlite/query_builder/functions.rs.html#50-54' title='goto source code'>[src]</a></span></h1>
+<pre class='rust fn'>pub fn insert_or_replace&lt;'a, T:&nbsp;?<a class="trait" href="https://doc.rust-lang.org/nightly/core/marker/trait.Sized.html" title="trait core::marker::Sized">Sized</a>&gt;(<br>&nbsp;&nbsp;&nbsp;&nbsp;records: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;'a </a>T<br>) -&gt; <a class="struct" href="../../../../diesel/query_builder/insert_statement/struct.IncompleteInsertStatement.html" title="struct diesel::query_builder::insert_statement::IncompleteInsertStatement">IncompleteInsertStatement</a>&lt;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.reference.html">&amp;'a </a>T, Or&lt;<a class="struct" href="../../../../diesel/query_builder/insert_statement/struct.Insert.html" title="struct diesel::query_builder::insert_statement::Insert">Insert</a>, Replace&gt;&gt;</pre><div class='docblock'><p>Creates a SQLite <code>INSERT OR REPLACE</code> statement. If a constraint violation
 fails, SQLite will attempt to replace the offending row instead.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
-<pre class='rust rust-example-rendered'>
-<span class='ident'>insert</span>(<span class='kw-2'>&amp;</span><span class='ident'>NewUser</span>::<span class='ident'>new</span>(<span class='string'>&quot;Sean&quot;</span>)).<span class='ident'>into</span>(<span class='ident'>users</span>).<span class='ident'>execute</span>(<span class='kw-2'>&amp;</span><span class='ident'>conn</span>).<span class='ident'>unwrap</span>();
-<span class='ident'>insert</span>(<span class='kw-2'>&amp;</span><span class='ident'>NewUser</span>::<span class='ident'>new</span>(<span class='string'>&quot;Tess&quot;</span>)).<span class='ident'>into</span>(<span class='ident'>users</span>).<span class='ident'>execute</span>(<span class='kw-2'>&amp;</span><span class='ident'>conn</span>).<span class='ident'>unwrap</span>();
+<pre class="rust rust-example-rendered">
+<span class="ident">insert</span>(<span class="kw-2">&amp;</span><span class="ident">NewUser</span>::<span class="ident">new</span>(<span class="string">&quot;Sean&quot;</span>)).<span class="ident">into</span>(<span class="ident">users</span>).<span class="ident">execute</span>(<span class="kw-2">&amp;</span><span class="ident">conn</span>).<span class="ident">unwrap</span>();
+<span class="ident">insert</span>(<span class="kw-2">&amp;</span><span class="ident">NewUser</span>::<span class="ident">new</span>(<span class="string">&quot;Tess&quot;</span>)).<span class="ident">into</span>(<span class="ident">users</span>).<span class="ident">execute</span>(<span class="kw-2">&amp;</span><span class="ident">conn</span>).<span class="ident">unwrap</span>();
 
-<span class='kw'>let</span> <span class='ident'>new_user</span> <span class='op'>=</span> <span class='ident'>User</span> { <span class='ident'>id</span>: <span class='number'>1</span>, <span class='ident'>name</span>: <span class='string'>&quot;Jim&quot;</span> };
-<span class='ident'>insert_or_replace</span>(<span class='kw-2'>&amp;</span><span class='ident'>new_user</span>).<span class='ident'>into</span>(<span class='ident'>users</span>).<span class='ident'>execute</span>(<span class='kw-2'>&amp;</span><span class='ident'>conn</span>).<span class='ident'>unwrap</span>();
+<span class="kw">let</span> <span class="ident">new_user</span> <span class="op">=</span> <span class="ident">User</span> { <span class="ident">id</span>: <span class="number">1</span>, <span class="ident">name</span>: <span class="string">&quot;Jim&quot;</span> };
+<span class="ident">insert_or_replace</span>(<span class="kw-2">&amp;</span><span class="ident">new_user</span>).<span class="ident">into</span>(<span class="ident">users</span>).<span class="ident">execute</span>(<span class="kw-2">&amp;</span><span class="ident">conn</span>).<span class="ident">unwrap</span>();
 
-<span class='kw'>let</span> <span class='ident'>names</span> <span class='op'>=</span> <span class='ident'>users</span>.<span class='ident'>select</span>(<span class='ident'>name</span>).<span class='ident'>order</span>(<span class='ident'>id</span>).<span class='ident'>load</span>::<span class='op'>&lt;</span><span class='ident'>String</span><span class='op'>&gt;</span>(<span class='kw-2'>&amp;</span><span class='ident'>conn</span>);
-<span class='macro'>assert_eq</span><span class='macro'>!</span>(<span class='prelude-val'>Ok</span>(<span class='macro'>vec</span><span class='macro'>!</span>[<span class='string'>&quot;Jim&quot;</span>.<span class='ident'>into</span>(), <span class='string'>&quot;Tess&quot;</span>.<span class='ident'>into</span>()]), <span class='ident'>names</span>);</pre>
+<span class="kw">let</span> <span class="ident">names</span> <span class="op">=</span> <span class="ident">users</span>.<span class="ident">select</span>(<span class="ident">name</span>).<span class="ident">order</span>(<span class="ident">id</span>).<span class="ident">load</span>::<span class="op">&lt;</span><span class="ident">String</span><span class="op">&gt;</span>(<span class="kw-2">&amp;</span><span class="ident">conn</span>);
+<span class="macro">assert_eq</span><span class="macro">!</span>(<span class="prelude-val">Ok</span>(<span class="macro">vec</span><span class="macro">!</span>[<span class="string">&quot;Jim&quot;</span>.<span class="ident">into</span>(), <span class="string">&quot;Tess&quot;</span>.<span class="ident">into</span>()]), <span class="ident">names</span>);</pre>
 </div></section>
     <section id='search' class="content hidden"></section>
 
@@ -118,7 +119,6 @@ fails, SQLite will attempt to replace the offending row instead.</p>
         window.rootPath = "../../../../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../../../../jquery.js"></script>
     <script src="../../../../main.js"></script>
     <script defer src="../../../../search-index.js"></script>
 </body>

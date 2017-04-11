@@ -1,4 +1,5 @@
 (function() {var implementors = {};
+implementors["byteorder"] = [];
 implementors["diesel"] = [];
 
             if (window.register_implementors) {

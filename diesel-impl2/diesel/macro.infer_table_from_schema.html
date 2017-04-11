@@ -9,6 +9,7 @@
 
     <title>diesel::infer_table_from_schema - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc macro">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -42,15 +43,15 @@
         </form>
     </nav>
 
-    <section id='main' class="content macro">
-<h1 class='fqn'><span class='in-band'>Macro <a href='index.html'>diesel</a>::<wbr><a class='macro' href=''>infer_table_from_schema</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Macro <a href='index.html'>diesel</a>::<wbr><a class="macro" href=''>infer_table_from_schema</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-4707' class='srclink' href='../src/diesel/src/macros/macros_from_codegen.rs.html#35-41' title='goto source code'>[src]</a></span></h1>
-<pre class='rust macro'>
-<span class='macro'>macro_rules</span><span class='macro'>!</span> <span class='ident'>infer_table_from_schema</span> {
-    (<span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>database_url</span>: <span class='ident'>expr</span>, <span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>table_name</span>: <span class='ident'>expr</span>) <span class='op'>=&gt;</span> { ... };
+               </span><a class='srclink' href='../src/diesel/macros/macros_from_codegen.rs.html#35-41' title='goto source code'>[src]</a></span></h1>
+<pre class="rust macro">
+<span class="macro">macro_rules</span><span class="macro">!</span> <span class="ident">infer_table_from_schema</span> {
+    (<span class="macro-nonterminal">$</span><span class="macro-nonterminal">database_url</span>: <span class="ident">expr</span>, <span class="macro-nonterminal">$</span><span class="macro-nonterminal">table_name</span>: <span class="ident">expr</span>) <span class="op">=&gt;</span> { ... };
 }</pre>
 <div class='docblock'><p>Establishes a database connection at compile time, loads the schema information about a table&#39;s
 columns, and invokes <a href="macro.table!.html"><code>table!</code></a> for you automatically.</p>
@@ -123,7 +124,6 @@ unexpectedly for a type listed in our docs.)</p>
         window.rootPath = "../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     <script defer src="../search-index.js"></script>
 </body>

@@ -9,6 +9,7 @@
 
     <title>diesel::query_builder::QueryBuilder - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc trait">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../index.html'>diesel</a>::<wbr><a href='index.html'>query_builder</a></p><script>window.sidebarCurrent = {name: 'QueryBuilder', ty: 'trait', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+        <p class='location'>Trait QueryBuilder</p><div class="block items"><ul><li><a href="#required-methods">Required Methods</a></li><li><a href="#implementors">Implementors</a></li></ul></div><p class='location'><a href='../index.html'>diesel</a>::<wbr><a href='index.html'>query_builder</a></p><script>window.sidebarCurrent = {name: 'QueryBuilder', ty: 'trait', relpath: ''};</script><script defer src="sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,30 +43,34 @@
         </form>
     </nav>
 
-    <section id='main' class="content trait">
-<h1 class='fqn'><span class='in-band'>Trait <a href='../index.html'>diesel</a>::<wbr><a href='index.html'>query_builder</a>::<wbr><a class='trait' href=''>QueryBuilder</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Trait <a href='../index.html'>diesel</a>::<wbr><a href='index.html'>query_builder</a>::<wbr><a class="trait" href=''>QueryBuilder</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-1741' class='srclink' href='../../src/diesel/src/query_builder/mod.rs.html#55-59' title='goto source code'>[src]</a></span></h1>
-<pre class='rust trait'>pub trait QueryBuilder&lt;DB:&nbsp;<a class='trait' href='../../diesel/backend/trait.Backend.html' title='diesel::backend::Backend'>Backend</a>&gt; {
-    fn <a href='#tymethod.push_sql' class='fnname'>push_sql</a>(&amp;mut self, sql: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>);
-    fn <a href='#tymethod.push_identifier' class='fnname'>push_identifier</a>(&amp;mut self, identifier: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='type' href='../../diesel/query_builder/type.BuildQueryResult.html' title='diesel::query_builder::BuildQueryResult'>BuildQueryResult</a>;
-    fn <a href='#tymethod.push_bind_param' class='fnname'>push_bind_param</a>(&amp;mut self);
+               </span><a class='srclink' href='../../src/diesel/query_builder/mod.rs.html#55-59' title='goto source code'>[src]</a></span></h1>
+<pre class='rust trait'>pub trait QueryBuilder&lt;DB:&nbsp;<a class="trait" href="../../diesel/backend/trait.Backend.html" title="trait diesel::backend::Backend">Backend</a>&gt; {
+    fn <a href='#tymethod.push_sql' class='fnname'>push_sql</a>(&amp;mut self, sql: &amp;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>);
+<div class='item-spacer'></div>    fn <a href='#tymethod.push_identifier' class='fnname'>push_identifier</a>(&amp;mut self, identifier: &amp;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>) -&gt; <a class="type" href="../../diesel/query_builder/type.BuildQueryResult.html" title="type diesel::query_builder::BuildQueryResult">BuildQueryResult</a>;
+<div class='item-spacer'></div>    fn <a href='#tymethod.push_bind_param' class='fnname'>push_bind_param</a>(&amp;mut self);
 }</pre><div class='docblock'><p>Apps should not need to concern themselves with this trait.</p>
 
 <p>This is the trait used to actually construct a SQL query. You will take one
 of these as an argument if you&#39;re implementing
 <a href="trait.QueryFragment.html"><code>QueryFragment</code></a> manually.</p>
 </div>
-            <h2 id='required-methods'>Required Methods</h2>
+            <h2 id='required-methods' class='small-section-header'>
+              Required Methods<a href='#required-methods' class='anchor'></a>
+            </h2>
             <div class='methods'>
-        <h3 id='tymethod.push_sql' class='method stab '><span id='push_sql.v' class='invisible'><code>fn <a href='#tymethod.push_sql' class='fnname'>push_sql</a>(&amp;mut self, sql: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>)</code><span class='out-of-band'></span></span></h3><h3 id='tymethod.push_identifier' class='method stab '><span id='push_identifier.v' class='invisible'><code>fn <a href='#tymethod.push_identifier' class='fnname'>push_identifier</a>(&amp;mut self, identifier: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; <a class='type' href='../../diesel/query_builder/type.BuildQueryResult.html' title='diesel::query_builder::BuildQueryResult'>BuildQueryResult</a></code><span class='out-of-band'></span></span></h3><h3 id='tymethod.push_bind_param' class='method stab '><span id='push_bind_param.v' class='invisible'><code>fn <a href='#tymethod.push_bind_param' class='fnname'>push_bind_param</a>(&amp;mut self)</code><span class='out-of-band'></span></span></h3></div>
-        <h2 id='implementors'>Implementors</h2>
+        <h3 id='tymethod.push_sql' class='method'><span id='push_sql.v' class='invisible'><code>fn <a href='#tymethod.push_sql' class='fnname'>push_sql</a>(&amp;mut self, sql: &amp;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>)</code><span class='out-of-band'></span></span></h3><h3 id='tymethod.push_identifier' class='method'><span id='push_identifier.v' class='invisible'><code>fn <a href='#tymethod.push_identifier' class='fnname'>push_identifier</a>(&amp;mut self, identifier: &amp;<a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.str.html">str</a>) -&gt; <a class="type" href="../../diesel/query_builder/type.BuildQueryResult.html" title="type diesel::query_builder::BuildQueryResult">BuildQueryResult</a></code><span class='out-of-band'></span></span></h3><h3 id='tymethod.push_bind_param' class='method'><span id='push_bind_param.v' class='invisible'><code>fn <a href='#tymethod.push_bind_param' class='fnname'>push_bind_param</a>(&amp;mut self)</code><span class='out-of-band'></span></span></h3></div>
+        <h2 id='implementors' class='small-section-header'>
+          Implementors<a href='#implementors' class='anchor'></a>
+        </h2>
         <ul class='item-list' id='implementors-list'>
-    <li><code>impl QueryBuilder&lt;<a class='struct' href='../../diesel/pg/struct.Pg.html' title='diesel::pg::Pg'>Pg</a>&gt; for <a class='struct' href='../../diesel/pg/struct.PgQueryBuilder.html' title='diesel::pg::PgQueryBuilder'>PgQueryBuilder</a></code><span class='out-of-band'>
+    <li><code>impl QueryBuilder&lt;<a class="struct" href="../../diesel/pg/struct.Pg.html" title="struct diesel::pg::Pg">Pg</a>&gt; for <a class="struct" href="../../diesel/pg/struct.PgQueryBuilder.html" title="struct diesel::pg::PgQueryBuilder">PgQueryBuilder</a></code><span class='out-of-band'>
 <div class='cfg-feature' title='Requires feature postgres'>postgres</div></span></li>
-<li><code>impl QueryBuilder&lt;<a class='struct' href='../../diesel/sqlite/struct.Sqlite.html' title='diesel::sqlite::Sqlite'>Sqlite</a>&gt; for <a class='struct' href='../../diesel/sqlite/query_builder/struct.SqliteQueryBuilder.html' title='diesel::sqlite::query_builder::SqliteQueryBuilder'>SqliteQueryBuilder</a></code><span class='out-of-band'>
+<li><code>impl QueryBuilder&lt;<a class="struct" href="../../diesel/sqlite/struct.Sqlite.html" title="struct diesel::sqlite::Sqlite">Sqlite</a>&gt; for <a class="struct" href="../../diesel/sqlite/query_builder/struct.SqliteQueryBuilder.html" title="struct diesel::sqlite::query_builder::SqliteQueryBuilder">SqliteQueryBuilder</a></code><span class='out-of-band'>
 <div class='cfg-feature' title='Requires feature sqlite'>sqlite</div></span></li>
 </ul><script type="text/javascript" async
                          src="../../implementors/diesel/query_builder/trait.QueryBuilder.js">
@@ -126,7 +131,6 @@ of these as an argument if you&#39;re implementing
         window.rootPath = "../../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     <script defer src="../../search-index.js"></script>
 </body>

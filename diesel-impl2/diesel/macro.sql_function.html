@@ -9,6 +9,7 @@
 
     <title>diesel::sql_function - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc macro">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -42,18 +43,18 @@
         </form>
     </nav>
 
-    <section id='main' class="content macro">
-<h1 class='fqn'><span class='in-band'>Macro <a href='index.html'>diesel</a>::<wbr><a class='macro' href=''>sql_function</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Macro <a href='index.html'>diesel</a>::<wbr><a class="macro" href=''>sql_function</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-5565' class='srclink' href='../src/diesel/src/expression/functions/mod.rs.html#107-120' title='goto source code'>[src]</a></span></h1>
-<pre class='rust macro'>
-<span class='macro'>macro_rules</span><span class='macro'>!</span> <span class='ident'>sql_function</span> {
-    (<span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>fn_name</span>:<span class='ident'>ident</span>, <span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>struct_name</span>:<span class='ident'>ident</span>, ($(<span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>arg_name</span>:<span class='ident'>ident</span>: <span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>arg_type</span>:<span class='ident'>ty</span>),<span class='op'>*</span>) <span class='op'>-&gt;</span> <span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>return_type</span>:<span class='ident'>ty</span>) <span class='op'>=&gt;</span> { ... };
-    (<span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>fn_name</span>:<span class='ident'>ident</span>, <span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>struct_name</span>:<span class='ident'>ident</span>, ($(<span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>arg_name</span>:<span class='ident'>ident</span>: <span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>arg_type</span>:<span class='ident'>ty</span>),<span class='op'>*</span>) <span class='op'>-&gt;</span> <span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>return_type</span>:<span class='ident'>ty</span>,
-    <span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>docs</span>: <span class='ident'>expr</span>) <span class='op'>=&gt;</span> { ... };
-    (<span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>fn_name</span>:<span class='ident'>ident</span>, <span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>struct_name</span>:<span class='ident'>ident</span>, ($(<span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>arg_name</span>:<span class='ident'>ident</span>: <span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>arg_type</span>:<span class='ident'>ty</span>),<span class='op'>*</span>)) <span class='op'>=&gt;</span> { ... };
+               </span><a class='srclink' href='../src/diesel/expression/functions/mod.rs.html#107-120' title='goto source code'>[src]</a></span></h1>
+<pre class="rust macro">
+<span class="macro">macro_rules</span><span class="macro">!</span> <span class="ident">sql_function</span> {
+    (<span class="macro-nonterminal">$</span><span class="macro-nonterminal">fn_name</span>:<span class="ident">ident</span>, <span class="macro-nonterminal">$</span><span class="macro-nonterminal">struct_name</span>:<span class="ident">ident</span>, ($(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">arg_name</span>:<span class="ident">ident</span>: <span class="macro-nonterminal">$</span><span class="macro-nonterminal">arg_type</span>:<span class="ident">ty</span>),<span class="kw-2">*</span>) <span class="op">-&gt;</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">return_type</span>:<span class="ident">ty</span>) <span class="op">=&gt;</span> { ... };
+    (<span class="macro-nonterminal">$</span><span class="macro-nonterminal">fn_name</span>:<span class="ident">ident</span>, <span class="macro-nonterminal">$</span><span class="macro-nonterminal">struct_name</span>:<span class="ident">ident</span>, ($(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">arg_name</span>:<span class="ident">ident</span>: <span class="macro-nonterminal">$</span><span class="macro-nonterminal">arg_type</span>:<span class="ident">ty</span>),<span class="kw-2">*</span>) <span class="op">-&gt;</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">return_type</span>:<span class="ident">ty</span>,
+    <span class="macro-nonterminal">$</span><span class="macro-nonterminal">docs</span>: <span class="ident">expr</span>) <span class="op">=&gt;</span> { ... };
+    (<span class="macro-nonterminal">$</span><span class="macro-nonterminal">fn_name</span>:<span class="ident">ident</span>, <span class="macro-nonterminal">$</span><span class="macro-nonterminal">struct_name</span>:<span class="ident">ident</span>, ($(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">arg_name</span>:<span class="ident">ident</span>: <span class="macro-nonterminal">$</span><span class="macro-nonterminal">arg_type</span>:<span class="ident">ty</span>),<span class="kw-2">*</span>)) <span class="op">=&gt;</span> { ... };
 }</pre>
 <div class='docblock'><p>Declare a sql function for use in your code. Useful if you have your own SQL functions that
 you&#39;d like to use. You can optionally provide a doc string as well. <code>$struct_name</code> should just
@@ -66,13 +67,13 @@ type which represents the return type of that function. The function will automa
 its arguments to expressions.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
-<pre class='rust rust-example-rendered'>
-<span class='macro'>sql_function</span><span class='macro'>!</span>(<span class='ident'>canon_crate_name</span>, <span class='ident'>canon_crate_name_t</span>, (<span class='ident'>a</span>: <span class='ident'>types</span>::<span class='ident'>VarChar</span>) <span class='op'>-&gt;</span> <span class='ident'>types</span>::<span class='ident'>VarChar</span>);
+<pre class="rust rust-example-rendered">
+<span class="macro">sql_function</span><span class="macro">!</span>(<span class="ident">canon_crate_name</span>, <span class="ident">canon_crate_name_t</span>, (<span class="ident">a</span>: <span class="ident">types</span>::<span class="ident">VarChar</span>) <span class="op">-&gt;</span> <span class="ident">types</span>::<span class="ident">VarChar</span>);
 
-<span class='kw'>let</span> <span class='ident'>target_name</span> <span class='op'>=</span> <span class='string'>&quot;diesel&quot;</span>;
-<span class='ident'>crates</span>.<span class='ident'>filter</span>(<span class='ident'>canon_crate_name</span>(<span class='ident'>name</span>).<span class='ident'>eq</span>(<span class='ident'>canon_crate_name</span>(<span class='ident'>target_name</span>)));
-<span class='comment'>// This will generate the following SQL</span>
-<span class='comment'>// SELECT * FROM crates WHERE canon_crate_name(crates.name) = canon_crate_name($1)</span></pre>
+<span class="kw">let</span> <span class="ident">target_name</span> <span class="op">=</span> <span class="string">&quot;diesel&quot;</span>;
+<span class="ident">crates</span>.<span class="ident">filter</span>(<span class="ident">canon_crate_name</span>(<span class="ident">name</span>).<span class="ident">eq</span>(<span class="ident">canon_crate_name</span>(<span class="ident">target_name</span>)));
+<span class="comment">// This will generate the following SQL</span>
+<span class="comment">// SELECT * FROM crates WHERE canon_crate_name(crates.name) = canon_crate_name($1)</span></pre>
 </div></section>
     <section id='search' class="content hidden"></section>
 
@@ -130,7 +131,6 @@ its arguments to expressions.</p>
         window.rootPath = "../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     <script defer src="../search-index.js"></script>
 </body>

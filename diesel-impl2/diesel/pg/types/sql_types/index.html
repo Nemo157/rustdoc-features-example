@@ -9,6 +9,7 @@
 
     <title>diesel::pg::types::sql_types - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc mod">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../../../index.html'>diesel</a>::<wbr><a href='../../index.html'>pg</a>::<wbr><a href='../index.html'>types</a></p><script>window.sidebarCurrent = {name: 'sql_types', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+        <p class='location'>Module sql_types</p><div class="block items"><ul><li><a href="#structs">Structs</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'><a href='../../../index.html'>diesel</a>::<wbr><a href='../../index.html'>pg</a>::<wbr><a href='../index.html'>types</a></p><script>window.sidebarCurrent = {name: 'sql_types', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,98 +43,98 @@
         </form>
     </nav>
 
-    <section id='main' class="content mod">
-<h1 class='fqn'><span class='in-band'>Module <a href='../../../index.html'>diesel</a>::<wbr><a href='../../index.html'>pg</a>::<wbr><a href='../index.html'>types</a>::<wbr><a class='mod' href=''>sql_types</a></span><span class='out-of-band'><div class='cfg-feature' title='Requires feature postgres'>postgres</div><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Module <a href='../../../index.html'>diesel</a>::<wbr><a href='../../index.html'>pg</a>::<wbr><a href='../index.html'>types</a>::<wbr><a class="mod" href=''>sql_types</a></span><span class='out-of-band'><div class='cfg-feature' title='Requires feature postgres'>postgres</div><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-3307' class='srclink' href='../../../../src/diesel/src/pg/types/mod.rs.html#12-91' title='goto source code'>[src]</a></span></h1>
+               </span><a class='srclink' href='../../../../src/diesel/pg/types/mod.rs.html#12-91' title='goto source code'>[src]</a></span></h1>
 <div class='docblock'><p>PostgreSQL specific SQL types</p>
 
 <p>Note: All types in this module can be accessed through <code>diesel::types</code></p>
 </div><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Array.html'
-                                  title='diesel::pg::types::sql_types::Array'>Array</a></td>
+                           <td><a class="struct" href="struct.Array.html"
+                                  title='struct diesel::pg::types::sql_types::Array'>Array</a></td>
                            <td class='docblock-short'>
                                 <p>The Array SQL type. This wraps another type to represent a SQL array of
 that type. Multidimensional arrays are not supported, nor are arrays
 containing null.</p>
                                <span class='out-of-band'>
-                                   <div class='cfg-feature' title='Requires feature postgres'>postgres</div>
+                                   
                                </span>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Oid.html'
-                                  title='diesel::pg::types::sql_types::Oid'>Oid</a></td>
+                           <td><a class="struct" href="struct.Oid.html"
+                                  title='struct diesel::pg::types::sql_types::Oid'>Oid</a></td>
                            <td class='docblock-short'>
                                 <p>The OID SQL type. This is a PostgreSQL specific type.</p>
                                <span class='out-of-band'>
-                                   <div class='cfg-feature' title='Requires feature postgres'>postgres</div>
+                                   
                                </span>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Timestamptz.html'
-                                  title='diesel::pg::types::sql_types::Timestamptz'>Timestamptz</a></td>
+                           <td><a class="struct" href="struct.Timestamptz.html"
+                                  title='struct diesel::pg::types::sql_types::Timestamptz'>Timestamptz</a></td>
                            <td class='docblock-short'>
                                 <p>The &quot;timestamp with time zone&quot; SQL type, which PostgreSQL abbreviates
 to <code>timestamptz</code>.</p>
                                <span class='out-of-band'>
-                                   <div class='cfg-feature' title='Requires feature postgres'>postgres</div>
+                                   
                                </span>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Uuid.html'
-                                  title='diesel::pg::types::sql_types::Uuid'>Uuid</a></td>
+                           <td><a class="struct" href="struct.Uuid.html"
+                                  title='struct diesel::pg::types::sql_types::Uuid'>Uuid</a></td>
                            <td class='docblock-short'>
                                 <p>The UUID SQL type. This type can only be used with <code>feature = &quot;uuid&quot;</code></p>
                                <span class='out-of-band'>
-                                   <div class='cfg-feature' title='Requires features uuid, postgres'>uuid, postgres</div><div class='cfg-feature cfg-feature-introduced' title='Requires feature uuid (introduced)'>uuid</div>
+                                   <div class='cfg-feature cfg-feature-introduced' title='Requires feature uuid'>uuid</div>
                                </span>
                            </td>
                        </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='type' href='type.BigSerial.html'
-                                  title='diesel::pg::types::sql_types::BigSerial'>BigSerial</a></td>
+                           <td><a class="type" href="type.BigSerial.html"
+                                  title='type diesel::pg::types::sql_types::BigSerial'>BigSerial</a></td>
                            <td class='docblock-short'>
                                 <p>Alias for BigInt</p>
                                <span class='out-of-band'>
-                                   <div class='cfg-feature' title='Requires feature postgres'>postgres</div>
+                                   
                                </span>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='type' href='type.Bytea.html'
-                                  title='diesel::pg::types::sql_types::Bytea'>Bytea</a></td>
+                           <td><a class="type" href="type.Bytea.html"
+                                  title='type diesel::pg::types::sql_types::Bytea'>Bytea</a></td>
                            <td class='docblock-short'>
                                 <p>Alias for <code>Binary</code>, to ensure <code>infer_schema!</code> works</p>
                                <span class='out-of-band'>
-                                   <div class='cfg-feature' title='Requires feature postgres'>postgres</div>
+                                   
                                </span>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='type' href='type.Serial.html'
-                                  title='diesel::pg::types::sql_types::Serial'>Serial</a></td>
+                           <td><a class="type" href="type.Serial.html"
+                                  title='type diesel::pg::types::sql_types::Serial'>Serial</a></td>
                            <td class='docblock-short'>
                                 <p>Alias for Integer</p>
                                <span class='out-of-band'>
-                                   <div class='cfg-feature' title='Requires feature postgres'>postgres</div>
+                                   
                                </span>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='type' href='type.SmallSerial.html'
-                                  title='diesel::pg::types::sql_types::SmallSerial'>SmallSerial</a></td>
+                           <td><a class="type" href="type.SmallSerial.html"
+                                  title='type diesel::pg::types::sql_types::SmallSerial'>SmallSerial</a></td>
                            <td class='docblock-short'>
                                 <p>Alias for SmallInt</p>
                                <span class='out-of-band'>
-                                   <div class='cfg-feature' title='Requires feature postgres'>postgres</div>
+                                   
                                </span>
                            </td>
                        </tr></table></section>
@@ -193,7 +194,6 @@ to <code>timestamptz</code>.</p>
         window.rootPath = "../../../../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../../../../jquery.js"></script>
     <script src="../../../../main.js"></script>
     <script defer src="../../../../search-index.js"></script>
 </body>

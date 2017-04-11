@@ -9,6 +9,7 @@
 
     <title>diesel::helper_types - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc mod">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../index.html'>diesel</a></p><script>window.sidebarCurrent = {name: 'helper_types', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+        <p class='location'>Module helper_types</p><div class="block items"><ul><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'><a href='../index.html'>diesel</a></p><script>window.sidebarCurrent = {name: 'helper_types', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,12 +43,12 @@
         </form>
     </nav>
 
-    <section id='main' class="content mod">
-<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>diesel</a>::<wbr><a class='mod' href=''>helper_types</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>diesel</a>::<wbr><a class="mod" href=''>helper_types</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-4644' class='srclink' href='../../src/diesel/src/lib.rs.html#36-85' title='goto source code'>[src]</a></span></h1>
+               </span><a class='srclink' href='../../src/diesel/lib.rs.html#36-85' title='goto source code'>[src]</a></span></h1>
 <div class='docblock'><p>Provide helper types for concisely writing the return type of functions.
 As with iterators, it is unfortunately difficult to return a partially
 constructed query without exposing the exact implementation of the
@@ -60,8 +61,8 @@ be <code>Limit&lt;Order&lt;FindBy&lt;users, first_name, &amp;str&gt;, Asc&lt;las
 </div><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='type' href='type.Filter.html'
-                                  title='diesel::helper_types::Filter'>Filter</a></td>
+                           <td><a class="type" href="type.Filter.html"
+                                  title='type diesel::helper_types::Filter'>Filter</a></td>
                            <td class='docblock-short'>
                                 <p>Represents the return type of <code>.filter(predicate)</code></p>
                                <span class='out-of-band'>
@@ -70,8 +71,8 @@ be <code>Limit&lt;Order&lt;FindBy&lt;users, first_name, &amp;str&gt;, Asc&lt;las
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='type' href='type.Find.html'
-                                  title='diesel::helper_types::Find'>Find</a></td>
+                           <td><a class="type" href="type.Find.html"
+                                  title='type diesel::helper_types::Find'>Find</a></td>
                            <td class='docblock-short'>
                                 <p>Represents the return type of <code>.find(pk)</code></p>
                                <span class='out-of-band'>
@@ -80,8 +81,8 @@ be <code>Limit&lt;Order&lt;FindBy&lt;users, first_name, &amp;str&gt;, Asc&lt;las
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='type' href='type.FindBy.html'
-                                  title='diesel::helper_types::FindBy'>FindBy</a></td>
+                           <td><a class="type" href="type.FindBy.html"
+                                  title='type diesel::helper_types::FindBy'>FindBy</a></td>
                            <td class='docblock-short'>
                                 <p>Represents the return type of <code>.filter(lhs.eq(rhs))</code></p>
                                <span class='out-of-band'>
@@ -90,8 +91,8 @@ be <code>Limit&lt;Order&lt;FindBy&lt;users, first_name, &amp;str&gt;, Asc&lt;las
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='type' href='type.Limit.html'
-                                  title='diesel::helper_types::Limit'>Limit</a></td>
+                           <td><a class="type" href="type.Limit.html"
+                                  title='type diesel::helper_types::Limit'>Limit</a></td>
                            <td class='docblock-short'>
                                 <p>Represents the return type of <code>.limit()</code></p>
                                <span class='out-of-band'>
@@ -100,8 +101,8 @@ be <code>Limit&lt;Order&lt;FindBy&lt;users, first_name, &amp;str&gt;, Asc&lt;las
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='type' href='type.Offset.html'
-                                  title='diesel::helper_types::Offset'>Offset</a></td>
+                           <td><a class="type" href="type.Offset.html"
+                                  title='type diesel::helper_types::Offset'>Offset</a></td>
                            <td class='docblock-short'>
                                 <p>Represents the return type of <code>.offset()</code></p>
                                <span class='out-of-band'>
@@ -110,8 +111,8 @@ be <code>Limit&lt;Order&lt;FindBy&lt;users, first_name, &amp;str&gt;, Asc&lt;las
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='type' href='type.Order.html'
-                                  title='diesel::helper_types::Order'>Order</a></td>
+                           <td><a class="type" href="type.Order.html"
+                                  title='type diesel::helper_types::Order'>Order</a></td>
                            <td class='docblock-short'>
                                 <p>Represents the return type of <code>.order(ordering)</code></p>
                                <span class='out-of-band'>
@@ -120,8 +121,8 @@ be <code>Limit&lt;Order&lt;FindBy&lt;users, first_name, &amp;str&gt;, Asc&lt;las
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='type' href='type.Select.html'
-                                  title='diesel::helper_types::Select'>Select</a></td>
+                           <td><a class="type" href="type.Select.html"
+                                  title='type diesel::helper_types::Select'>Select</a></td>
                            <td class='docblock-short'>
                                 <p>Represents the return type of <code>.select(selection)</code></p>
                                <span class='out-of-band'>
@@ -130,8 +131,8 @@ be <code>Limit&lt;Order&lt;FindBy&lt;users, first_name, &amp;str&gt;, Asc&lt;las
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='type' href='type.Update.html'
-                                  title='diesel::helper_types::Update'>Update</a></td>
+                           <td><a class="type" href="type.Update.html"
+                                  title='type diesel::helper_types::Update'>Update</a></td>
                            <td class='docblock-short'>
                                 <p>Represents the return type of <code>update(lhs).set(rhs)</code></p>
                                <span class='out-of-band'>
@@ -140,8 +141,8 @@ be <code>Limit&lt;Order&lt;FindBy&lt;users, first_name, &amp;str&gt;, Asc&lt;las
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='type' href='type.With.html'
-                                  title='diesel::helper_types::With'>With</a></td>
+                           <td><a class="type" href="type.With.html"
+                                  title='type diesel::helper_types::With'>With</a></td>
                            <td class='docblock-short'>
                                 <p>Represents the return type of <code>.with(aliased_expr)</code></p>
                                <span class='out-of-band'>
@@ -205,7 +206,6 @@ be <code>Limit&lt;Order&lt;FindBy&lt;users, first_name, &amp;str&gt;, Asc&lt;las
         window.rootPath = "../../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     <script defer src="../../search-index.js"></script>
 </body>

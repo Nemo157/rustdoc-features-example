@@ -9,6 +9,7 @@
 
     <title>diesel::operator_allowed - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc macro">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -42,15 +43,15 @@
         </form>
     </nav>
 
-    <section id='main' class="content macro">
-<h1 class='fqn'><span class='in-band'>Macro <a href='index.html'>diesel</a>::<wbr><a class='macro' href=''>operator_allowed</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Macro <a href='index.html'>diesel</a>::<wbr><a class="macro" href=''>operator_allowed</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-4991' class='srclink' href='../src/diesel/src/expression/ops/mod.rs.html#7-21' title='goto source code'>[src]</a></span></h1>
-<pre class='rust macro'>
-<span class='macro'>macro_rules</span><span class='macro'>!</span> <span class='ident'>operator_allowed</span> {
-    (<span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>tpe</span>: <span class='ident'>ty</span>, <span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>op</span>: <span class='ident'>ident</span>, <span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>fn_name</span>: <span class='ident'>ident</span>) <span class='op'>=&gt;</span> { ... };
+               </span><a class='srclink' href='../src/diesel/expression/ops/mod.rs.html#7-21' title='goto source code'>[src]</a></span></h1>
+<pre class="rust macro">
+<span class="macro">macro_rules</span><span class="macro">!</span> <span class="ident">operator_allowed</span> {
+    (<span class="macro-nonterminal">$</span><span class="macro-nonterminal">tpe</span>: <span class="ident">ty</span>, <span class="macro-nonterminal">$</span><span class="macro-nonterminal">op</span>: <span class="ident">ident</span>, <span class="macro-nonterminal">$</span><span class="macro-nonterminal">fn_name</span>: <span class="ident">ident</span>) <span class="op">=&gt;</span> { ... };
 }</pre>
 <div class='docblock'><p>Implements the Rust operator for a given type. If you create a new SQL
 function, which returns a type that you&#39;d like to use an operator on, you
@@ -114,7 +115,6 @@ orphan rules.</p>
         window.rootPath = "../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     <script defer src="../search-index.js"></script>
 </body>

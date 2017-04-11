@@ -9,6 +9,7 @@
 
     <title>diesel::expression::expression_methods - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc mod">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../../index.html'>diesel</a>::<wbr><a href='../index.html'>expression</a></p><script>window.sidebarCurrent = {name: 'expression_methods', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+        <p class='location'>Module expression_methods</p><div class="block items"><ul><li><a href="#reexports">Reexports</a></li><li><a href="#modules">Modules</a></li></ul></div><p class='location'><a href='../../index.html'>diesel</a>::<wbr><a href='../index.html'>expression</a></p><script>window.sidebarCurrent = {name: 'expression_methods', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,12 +43,12 @@
         </form>
     </nav>
 
-    <section id='main' class="content mod">
-<h1 class='fqn'><span class='in-band'>Module <a href='../../index.html'>diesel</a>::<wbr><a href='../index.html'>expression</a>::<wbr><a class='mod' href=''>expression_methods</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Module <a href='../../index.html'>diesel</a>::<wbr><a href='../index.html'>expression</a>::<wbr><a class="mod" href=''>expression_methods</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-422' class='srclink' href='../../../src/diesel/src/expression/expression_methods/mod.rs.html#1-18' title='goto source code'>[src]</a></span></h1>
+               </span><a class='srclink' href='../../../src/diesel/expression/expression_methods/mod.rs.html#1-22' title='goto source code'>[src]</a></span></h1>
 <div class='docblock'><p>Adds various methods to construct new expressions. These traits are exported
 by default, and implemented automatically.</p>
 
@@ -55,15 +56,11 @@ by default, and implemented automatically.</p>
 <code>Expression</code> of the appropriate type. You should not rely on the specific
 traits existing, their names, or their organization.</p>
 </div><h2 id='reexports' class='section-header'><a href="#reexports">Reexports</a></h2>
-<table><tr><td><code>pub use self::<a class='mod'
-                                       href='./bool_expression_methods/index.html'>bool_expression_methods</a>::<a class='trait' href='../../../diesel/expression/expression_methods/bool_expression_methods/trait.BoolExpressionMethods.html' title='diesel::expression::expression_methods::bool_expression_methods::BoolExpressionMethods'>BoolExpressionMethods</a>;</code></td></tr><tr><td><code>pub use self::<a class='mod'
-                                       href='./escape_expression_methods/index.html'>escape_expression_methods</a>::<a class='trait' href='../../../diesel/expression/expression_methods/escape_expression_methods/trait.EscapeExpressionMethods.html' title='diesel::expression::expression_methods::escape_expression_methods::EscapeExpressionMethods'>EscapeExpressionMethods</a>;</code></td></tr><tr><td><code>pub use self::<a class='mod'
-                                       href='./global_expression_methods/index.html'>global_expression_methods</a>::<a class='trait' href='../../../diesel/expression/expression_methods/global_expression_methods/trait.ExpressionMethods.html' title='diesel::expression::expression_methods::global_expression_methods::ExpressionMethods'>ExpressionMethods</a>;</code></td></tr><tr><td><code>pub use self::<a class='mod'
-                                       href='./text_expression_methods/index.html'>text_expression_methods</a>::<a class='trait' href='../../../diesel/expression/expression_methods/text_expression_methods/trait.TextExpressionMethods.html' title='diesel::expression::expression_methods::text_expression_methods::TextExpressionMethods'>TextExpressionMethods</a>;</code></td></tr><tr><td><code>pub use pg::expression::<a class='mod' href='../../../diesel/pg/expression/expression_methods/index.html' title='diesel::pg::expression::expression_methods'>expression_methods</a>::*;</code></td></tr></table><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table><tr><td><code>pub use self::<a class="mod" href="./bool_expression_methods/index.html">bool_expression_methods</a>::<a class="trait" href="../../../diesel/expression/expression_methods/bool_expression_methods/trait.BoolExpressionMethods.html" title="trait diesel::expression::expression_methods::bool_expression_methods::BoolExpressionMethods">BoolExpressionMethods</a>;</code></td></tr><tr><td><code>pub use self::<a class="mod" href="./escape_expression_methods/index.html">escape_expression_methods</a>::<a class="trait" href="../../../diesel/expression/expression_methods/escape_expression_methods/trait.EscapeExpressionMethods.html" title="trait diesel::expression::expression_methods::escape_expression_methods::EscapeExpressionMethods">EscapeExpressionMethods</a>;</code></td></tr><tr><td><code>pub use self::<a class="mod" href="./global_expression_methods/index.html">global_expression_methods</a>::<a class="trait" href="../../../diesel/expression/expression_methods/global_expression_methods/trait.ExpressionMethods.html" title="trait diesel::expression::expression_methods::global_expression_methods::ExpressionMethods">ExpressionMethods</a>;</code></td></tr><tr><td><code>pub use self::<a class="mod" href="./text_expression_methods/index.html">text_expression_methods</a>::<a class="trait" href="../../../diesel/expression/expression_methods/text_expression_methods/trait.TextExpressionMethods.html" title="trait diesel::expression::expression_methods::text_expression_methods::TextExpressionMethods">TextExpressionMethods</a>;</code></td></tr><tr><td><code>pub use pg::expression::<a class="mod" href="../../../diesel/pg/expression/expression_methods/index.html" title="mod diesel::pg::expression::expression_methods">expression_methods</a>::*;</code></td></tr></table><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='mod' href='bool_expression_methods/index.html'
-                                  title='diesel::expression::expression_methods::bool_expression_methods'>bool_expression_methods</a></td>
+                           <td><a class="mod" href="bool_expression_methods/index.html"
+                                  title='mod diesel::expression::expression_methods::bool_expression_methods'>bool_expression_methods</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -72,8 +69,8 @@ traits existing, their names, or their organization.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='mod' href='escape_expression_methods/index.html'
-                                  title='diesel::expression::expression_methods::escape_expression_methods'>escape_expression_methods</a></td>
+                           <td><a class="mod" href="escape_expression_methods/index.html"
+                                  title='mod diesel::expression::expression_methods::escape_expression_methods'>escape_expression_methods</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -82,8 +79,8 @@ traits existing, their names, or their organization.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='mod' href='global_expression_methods/index.html'
-                                  title='diesel::expression::expression_methods::global_expression_methods'>global_expression_methods</a></td>
+                           <td><a class="mod" href="global_expression_methods/index.html"
+                                  title='mod diesel::expression::expression_methods::global_expression_methods'>global_expression_methods</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -92,8 +89,8 @@ traits existing, their names, or their organization.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='mod' href='text_expression_methods/index.html'
-                                  title='diesel::expression::expression_methods::text_expression_methods'>text_expression_methods</a></td>
+                           <td><a class="mod" href="text_expression_methods/index.html"
+                                  title='mod diesel::expression::expression_methods::text_expression_methods'>text_expression_methods</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -157,7 +154,6 @@ traits existing, their names, or their organization.</p>
         window.rootPath = "../../../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../../../jquery.js"></script>
     <script src="../../../main.js"></script>
     <script defer src="../../../search-index.js"></script>
 </body>

@@ -1,5 +1,11 @@
 (function() {var implementors = {};
-implementors["diesel"] = ["impl&lt;R&gt; <a class='trait' href='https://doc.rust-lang.org/rand/rand/trait.Rng.html' title='rand::Rng'>Rng</a> for StdGen&lt;R&gt; <span class='where'>where R: <a class='trait' href='https://doc.rust-lang.org/rand/rand/trait.Rng.html' title='rand::Rng'>Rng</a></span>",];
+implementors["chrono"] = [];
+implementors["diesel"] = ["impl&lt;R&gt; <a class=\"trait\" href=\"rand/trait.Rng.html\" title=\"trait rand::Rng\">Rng</a> for <a class=\"struct\" href=\"quickcheck/arbitrary/struct.StdGen.html\" title=\"struct quickcheck::arbitrary::StdGen\">StdGen</a>&lt;R&gt; <span class=\"where fmt-newline\">where<br>&nbsp;&nbsp;&nbsp;&nbsp;R: <a class=\"trait\" href=\"rand/trait.Rng.html\" title=\"trait rand::Rng\">Rng</a>,&nbsp;</span>",];
+implementors["libc"] = [];
+implementors["num"] = [];
+implementors["quickcheck"] = [];
+implementors["rand"] = [];
+implementors["regex_syntax"] = [];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

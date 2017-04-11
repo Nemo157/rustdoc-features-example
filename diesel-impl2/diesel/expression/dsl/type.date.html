@@ -9,6 +9,7 @@
 
     <title>diesel::expression::dsl::date - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc type">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../../index.html'>diesel</a>::<wbr><a href='../index.html'>expression</a>::<wbr><a href='index.html'>dsl</a></p><script>window.sidebarCurrent = {name: 'date', ty: 'type', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+        <p class='location'>Type Definition date</p><p class='location'><a href='../../index.html'>diesel</a>::<wbr><a href='../index.html'>expression</a>::<wbr><a href='index.html'>dsl</a></p><script>window.sidebarCurrent = {name: 'date', ty: 'type', relpath: ''};</script><script defer src="sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,13 +43,13 @@
         </form>
     </nav>
 
-    <section id='main' class="content type">
-<h1 class='fqn'><span class='in-band'>Type Definition <a href='../../index.html'>diesel</a>::<wbr><a href='../index.html'>expression</a>::<wbr><a href='index.html'>dsl</a>::<wbr><a class='type' href=''>date</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Type Definition <a href='../../index.html'>diesel</a>::<wbr><a href='../index.html'>expression</a>::<wbr><a href='index.html'>dsl</a>::<wbr><a class="type" href=''>date</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-5783' class='srclink' href='../../../src/diesel/src/expression/functions/mod.rs.html#14-16' title='goto source code'>[src]</a></span></h1>
-<pre class='rust typedef'>type date&lt;x&gt; = date_t&lt;x::Expression&gt;;</pre></section>
+               </span><a class='srclink' href='../../../src/diesel/expression/functions/mod.rs.html#14-16' title='goto source code'>[src]</a></span></h1>
+<pre class='rust typedef'>type date&lt;x&gt; = date_t&lt;&lt;x as <a class="trait" href="../../../diesel/expression/trait.AsExpression.html" title="trait diesel::expression::AsExpression">AsExpression</a>&lt;<a class="struct" href="../../../diesel/types/struct.Timestamp.html" title="struct diesel::types::Timestamp">Timestamp</a>&gt;&gt;::<a class="type" href="../../../diesel/expression/trait.AsExpression.html#associatedtype.Expression" title="type diesel::expression::AsExpression::Expression">Expression</a>&gt;;</pre></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
@@ -105,7 +106,6 @@
         window.rootPath = "../../../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../../../jquery.js"></script>
     <script src="../../../main.js"></script>
     <script defer src="../../../search-index.js"></script>
 </body>

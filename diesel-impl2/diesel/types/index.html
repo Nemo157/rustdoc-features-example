@@ -9,6 +9,7 @@
 
     <title>diesel::types - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc mod">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../index.html'>diesel</a></p><script>window.sidebarCurrent = {name: 'types', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+        <p class='location'>Module types</p><div class="block items"><ul><li><a href="#reexports">Reexports</a></li><li><a href="#modules">Modules</a></li><li><a href="#structs">Structs</a></li><li><a href="#enums">Enums</a></li><li><a href="#traits">Traits</a></li><li><a href="#types">Type Definitions</a></li></ul></div><p class='location'><a href='../index.html'>diesel</a></p><script>window.sidebarCurrent = {name: 'types', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,12 +43,12 @@
         </form>
     </nav>
 
-    <section id='main' class="content mod">
-<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>diesel</a>::<wbr><a class='mod' href=''>types</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>diesel</a>::<wbr><a class="mod" href=''>types</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-1811' class='srclink' href='../../src/diesel/src/types/mod.rs.html#1-320' title='goto source code'>[src]</a></span></h1>
+               </span><a class='srclink' href='../../src/diesel/types/mod.rs.html#1-320' title='goto source code'>[src]</a></span></h1>
 <div class='docblock'><p>Types which represent a native SQL data type, and the conversions between
 them and Rust primitives. The structs in this module are <em>only</em> used as
 markers to represent a SQL type, and shouldn&#39;t be used in your structs. See
@@ -60,11 +61,11 @@ traits, or see the documentation for that SQL type.</p>
 
 <p>Any backend specific types are re-exported through this module</p>
 </div><h2 id='reexports' class='section-header'><a href="#reexports">Reexports</a></h2>
-<table><tr><td><code>pub use pg::types::<a class='mod' href='../../diesel/pg/types/sql_types/index.html' title='diesel::pg::types::sql_types'>sql_types</a>::*;</code></td></tr></table><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table><tr><td><code>pub use pg::types::<a class="mod" href="../../diesel/pg/types/sql_types/index.html" title="mod diesel::pg::types::sql_types">sql_types</a>::*;</code></td></tr></table><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='mod' href='ops/index.html'
-                                  title='diesel::types::ops'>ops</a></td>
+                           <td><a class="mod" href="ops/index.html"
+                                  title='mod diesel::types::ops'>ops</a></td>
                            <td class='docblock-short'>
                                 <p>Apps should not need to concern themselves with this module.</p>
                                <span class='out-of-band'>
@@ -74,8 +75,8 @@ traits, or see the documentation for that SQL type.</p>
                        </tr></table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.BigInt.html'
-                                  title='diesel::types::BigInt'>BigInt</a></td>
+                           <td><a class="struct" href="struct.BigInt.html"
+                                  title='struct diesel::types::BigInt'>BigInt</a></td>
                            <td class='docblock-short'>
                                 <p>The big integer SQL type.</p>
                                <span class='out-of-band'>
@@ -84,8 +85,8 @@ traits, or see the documentation for that SQL type.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Binary.html'
-                                  title='diesel::types::Binary'>Binary</a></td>
+                           <td><a class="struct" href="struct.Binary.html"
+                                  title='struct diesel::types::Binary'>Binary</a></td>
                            <td class='docblock-short'>
                                 <p>The binary SQL type.</p>
                                <span class='out-of-band'>
@@ -94,8 +95,8 @@ traits, or see the documentation for that SQL type.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Bool.html'
-                                  title='diesel::types::Bool'>Bool</a></td>
+                           <td><a class="struct" href="struct.Bool.html"
+                                  title='struct diesel::types::Bool'>Bool</a></td>
                            <td class='docblock-short'>
                                 <p>The boolean SQL type. On SQLite this is emulated with an integer.</p>
                                <span class='out-of-band'>
@@ -104,8 +105,8 @@ traits, or see the documentation for that SQL type.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Date.html'
-                                  title='diesel::types::Date'>Date</a></td>
+                           <td><a class="struct" href="struct.Date.html"
+                                  title='struct diesel::types::Date'>Date</a></td>
                            <td class='docblock-short'>
                                 <p>The date SQL type.</p>
                                <span class='out-of-band'>
@@ -114,8 +115,8 @@ traits, or see the documentation for that SQL type.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Double.html'
-                                  title='diesel::types::Double'>Double</a></td>
+                           <td><a class="struct" href="struct.Double.html"
+                                  title='struct diesel::types::Double'>Double</a></td>
                            <td class='docblock-short'>
                                 <p>The double precision float SQL type.</p>
                                <span class='out-of-band'>
@@ -124,8 +125,8 @@ traits, or see the documentation for that SQL type.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Float.html'
-                                  title='diesel::types::Float'>Float</a></td>
+                           <td><a class="struct" href="struct.Float.html"
+                                  title='struct diesel::types::Float'>Float</a></td>
                            <td class='docblock-short'>
                                 <p>The float SQL type.</p>
                                <span class='out-of-band'>
@@ -134,8 +135,8 @@ traits, or see the documentation for that SQL type.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Integer.html'
-                                  title='diesel::types::Integer'>Integer</a></td>
+                           <td><a class="struct" href="struct.Integer.html"
+                                  title='struct diesel::types::Integer'>Integer</a></td>
                            <td class='docblock-short'>
                                 <p>The integer SQL type.</p>
                                <span class='out-of-band'>
@@ -144,8 +145,8 @@ traits, or see the documentation for that SQL type.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Interval.html'
-                                  title='diesel::types::Interval'>Interval</a></td>
+                           <td><a class="struct" href="struct.Interval.html"
+                                  title='struct diesel::types::Interval'>Interval</a></td>
                            <td class='docblock-short'>
                                 <p>The interval SQL type.</p>
                                <span class='out-of-band'>
@@ -154,8 +155,8 @@ traits, or see the documentation for that SQL type.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Nullable.html'
-                                  title='diesel::types::Nullable'>Nullable</a></td>
+                           <td><a class="struct" href="struct.Nullable.html"
+                                  title='struct diesel::types::Nullable'>Nullable</a></td>
                            <td class='docblock-short'>
                                 <p>The nullable SQL type. This wraps another SQL type to indicate that it can
 be null. By default all values are assumed to be <code>NOT NULL</code>.</p>
@@ -165,8 +166,8 @@ be null. By default all values are assumed to be <code>NOT NULL</code>.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Numeric.html'
-                                  title='diesel::types::Numeric'>Numeric</a></td>
+                           <td><a class="struct" href="struct.Numeric.html"
+                                  title='struct diesel::types::Numeric'>Numeric</a></td>
                            <td class='docblock-short'>
                                 <p>The numeric SQL type.</p>
                                <span class='out-of-band'>
@@ -175,8 +176,8 @@ be null. By default all values are assumed to be <code>NOT NULL</code>.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.SmallInt.html'
-                                  title='diesel::types::SmallInt'>SmallInt</a></td>
+                           <td><a class="struct" href="struct.SmallInt.html"
+                                  title='struct diesel::types::SmallInt'>SmallInt</a></td>
                            <td class='docblock-short'>
                                 <p>The small integer SQL type.</p>
                                <span class='out-of-band'>
@@ -185,8 +186,8 @@ be null. By default all values are assumed to be <code>NOT NULL</code>.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Text.html'
-                                  title='diesel::types::Text'>Text</a></td>
+                           <td><a class="struct" href="struct.Text.html"
+                                  title='struct diesel::types::Text'>Text</a></td>
                            <td class='docblock-short'>
                                 <p>The text SQL type.</p>
                                <span class='out-of-band'>
@@ -195,8 +196,8 @@ be null. By default all values are assumed to be <code>NOT NULL</code>.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Time.html'
-                                  title='diesel::types::Time'>Time</a></td>
+                           <td><a class="struct" href="struct.Time.html"
+                                  title='struct diesel::types::Time'>Time</a></td>
                            <td class='docblock-short'>
                                 <p>The time SQL type.</p>
                                <span class='out-of-band'>
@@ -205,8 +206,8 @@ be null. By default all values are assumed to be <code>NOT NULL</code>.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='struct' href='struct.Timestamp.html'
-                                  title='diesel::types::Timestamp'>Timestamp</a></td>
+                           <td><a class="struct" href="struct.Timestamp.html"
+                                  title='struct diesel::types::Timestamp'>Timestamp</a></td>
                            <td class='docblock-short'>
                                 <p>The timestamp/datetime SQL type.</p>
                                <span class='out-of-band'>
@@ -216,8 +217,8 @@ be null. By default all values are assumed to be <code>NOT NULL</code>.</p>
                        </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='enum' href='enum.IsNull.html'
-                                  title='diesel::types::IsNull'>IsNull</a></td>
+                           <td><a class="enum" href="enum.IsNull.html"
+                                  title='enum diesel::types::IsNull'>IsNull</a></td>
                            <td class='docblock-short'>
                                 <p>Tiny enum to make the return type of <code>ToSql</code> more descriptive</p>
                                <span class='out-of-band'>
@@ -227,8 +228,8 @@ be null. By default all values are assumed to be <code>NOT NULL</code>.</p>
                        </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='trait' href='trait.Foldable.html'
-                                  title='diesel::types::Foldable'>Foldable</a></td>
+                           <td><a class="trait" href="trait.Foldable.html"
+                                  title='trait diesel::types::Foldable'>Foldable</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -237,8 +238,8 @@ be null. By default all values are assumed to be <code>NOT NULL</code>.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='trait' href='trait.FromSql.html'
-                                  title='diesel::types::FromSql'>FromSql</a></td>
+                           <td><a class="trait" href="trait.FromSql.html"
+                                  title='trait diesel::types::FromSql'>FromSql</a></td>
                            <td class='docblock-short'>
                                 <p>How to deserialize a single field of a given type. The input will always be
 the binary representation, not the text.</p>
@@ -248,8 +249,8 @@ the binary representation, not the text.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='trait' href='trait.FromSqlRow.html'
-                                  title='diesel::types::FromSqlRow'>FromSqlRow</a></td>
+                           <td><a class="trait" href="trait.FromSqlRow.html"
+                                  title='trait diesel::types::FromSqlRow'>FromSqlRow</a></td>
                            <td class='docblock-short'>
                                 <p>How to deserialize multiple fields, with a known type. This type is
 implemented for tuples of various sizes.</p>
@@ -259,8 +260,8 @@ implemented for tuples of various sizes.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='trait' href='trait.HasSqlType.html'
-                                  title='diesel::types::HasSqlType'>HasSqlType</a></td>
+                           <td><a class="trait" href="trait.HasSqlType.html"
+                                  title='trait diesel::types::HasSqlType'>HasSqlType</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -269,8 +270,8 @@ implemented for tuples of various sizes.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='trait' href='trait.IntoNullable.html'
-                                  title='diesel::types::IntoNullable'>IntoNullable</a></td>
+                           <td><a class="trait" href="trait.IntoNullable.html"
+                                  title='trait diesel::types::IntoNullable'>IntoNullable</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -279,8 +280,8 @@ implemented for tuples of various sizes.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='trait' href='trait.NotNull.html'
-                                  title='diesel::types::NotNull'>NotNull</a></td>
+                           <td><a class="trait" href="trait.NotNull.html"
+                                  title='trait diesel::types::NotNull'>NotNull</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -289,8 +290,8 @@ implemented for tuples of various sizes.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='trait' href='trait.SqlOrd.html'
-                                  title='diesel::types::SqlOrd'>SqlOrd</a></td>
+                           <td><a class="trait" href="trait.SqlOrd.html"
+                                  title='trait diesel::types::SqlOrd'>SqlOrd</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -299,8 +300,8 @@ implemented for tuples of various sizes.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='trait' href='trait.ToSql.html'
-                                  title='diesel::types::ToSql'>ToSql</a></td>
+                           <td><a class="trait" href="trait.ToSql.html"
+                                  title='trait diesel::types::ToSql'>ToSql</a></td>
                            <td class='docblock-short'>
                                 <p>Serializes a single value to be sent to the database. The output will be
 included as a bind parameter, and is expected to be the binary format, not
@@ -312,8 +313,8 @@ text.</p>
                        </tr></table><h2 id='types' class='section-header'><a href="#types">Type Definitions</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='type' href='type.VarChar.html'
-                                  title='diesel::types::VarChar'>VarChar</a></td>
+                           <td><a class="type" href="type.VarChar.html"
+                                  title='type diesel::types::VarChar'>VarChar</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -377,7 +378,6 @@ text.</p>
         window.rootPath = "../../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     <script defer src="../../search-index.js"></script>
 </body>

@@ -9,6 +9,7 @@
 
     <title>diesel::types::ops::Add - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc trait">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../../index.html'>diesel</a>::<wbr><a href='../index.html'>types</a>::<wbr><a href='index.html'>ops</a></p><script>window.sidebarCurrent = {name: 'Add', ty: 'trait', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+        <p class='location'>Trait Add</p><div class="block items"><ul><li><a href="#associated-types">Associated Types</a></li><li><a href="#implementors">Implementors</a></li></ul></div><p class='location'><a href='../../index.html'>diesel</a>::<wbr><a href='../index.html'>types</a>::<wbr><a href='index.html'>ops</a></p><script>window.sidebarCurrent = {name: 'Add', ty: 'trait', relpath: ''};</script><script defer src="sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,36 +43,40 @@
         </form>
     </nav>
 
-    <section id='main' class="content trait">
-<h1 class='fqn'><span class='in-band'>Trait <a href='../../index.html'>diesel</a>::<wbr><a href='../index.html'>types</a>::<wbr><a href='index.html'>ops</a>::<wbr><a class='trait' href=''>Add</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Trait <a href='../../index.html'>diesel</a>::<wbr><a href='../index.html'>types</a>::<wbr><a href='index.html'>ops</a>::<wbr><a class="trait" href=''>Add</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-1813' class='srclink' href='../../../src/diesel/src/types/ops.rs.html#5-8' title='goto source code'>[src]</a></span></h1>
+               </span><a class='srclink' href='../../../src/diesel/types/ops.rs.html#5-8' title='goto source code'>[src]</a></span></h1>
 <pre class='rust trait'>pub trait Add {
-    type <a href='#associatedtype.Rhs' class='type'>Rhs</a>;
-    type <a href='#associatedtype.Output' class='type'>Output</a>;
+    type <a href='#associatedtype.Rhs' class="type">Rhs</a>;
+    type <a href='#associatedtype.Output' class="type">Output</a>;
 }</pre>
-            <h2 id='associated-types'>Associated Types</h2>
+            <h2 id='associated-types' class='small-section-header'>
+              Associated Types<a href='#associated-types' class='anchor'></a>
+            </h2>
             <div class='methods'>
-        <h3 id='associatedtype.Rhs' class='method stab '><span id='Rhs.t' class='invisible'><code>type <a href='#associatedtype.Rhs' class='type'>Rhs</a></code><span class='out-of-band'></span></span></h3><h3 id='associatedtype.Output' class='method stab '><span id='Output.t' class='invisible'><code>type <a href='#associatedtype.Output' class='type'>Output</a></code><span class='out-of-band'></span></span></h3></div>
-        <h2 id='implementors'>Implementors</h2>
+        <h3 id='associatedtype.Rhs' class='method'><span id='Rhs.t' class='invisible'><code>type <a href='#associatedtype.Rhs' class="type">Rhs</a></code><span class='out-of-band'></span></span></h3><h3 id='associatedtype.Output' class='method'><span id='Output.t' class='invisible'><code>type <a href='#associatedtype.Output' class="type">Output</a></code><span class='out-of-band'></span></span></h3></div>
+        <h2 id='implementors' class='small-section-header'>
+          Implementors<a href='#implementors' class='anchor'></a>
+        </h2>
         <ul class='item-list' id='implementors-list'>
-    <li><code>impl Add for <a class='struct' href='../../../diesel/types/struct.SmallInt.html' title='diesel::types::SmallInt'>SmallInt</a></code><span class='out-of-band'>
+    <li><code>impl Add for <a class="struct" href="../../../diesel/types/struct.SmallInt.html" title="struct diesel::types::SmallInt">SmallInt</a><span class="where fmt-newline">  type <a href='#associatedtype.Rhs' class="type">Rhs</a> = <a class="struct" href="../../../diesel/types/struct.SmallInt.html" title="struct diesel::types::SmallInt">SmallInt</a>;</span><span class="where fmt-newline">  type <a href='#associatedtype.Output' class="type">Output</a> = <a class="struct" href="../../../diesel/types/struct.SmallInt.html" title="struct diesel::types::SmallInt">SmallInt</a>;</span></code><span class='out-of-band'>
 </span></li>
-<li><code>impl Add for <a class='struct' href='../../../diesel/types/struct.Integer.html' title='diesel::types::Integer'>Integer</a></code><span class='out-of-band'>
+<li><code>impl Add for <a class="struct" href="../../../diesel/types/struct.Integer.html" title="struct diesel::types::Integer">Integer</a><span class="where fmt-newline">  type <a href='#associatedtype.Rhs' class="type">Rhs</a> = <a class="struct" href="../../../diesel/types/struct.Integer.html" title="struct diesel::types::Integer">Integer</a>;</span><span class="where fmt-newline">  type <a href='#associatedtype.Output' class="type">Output</a> = <a class="struct" href="../../../diesel/types/struct.Integer.html" title="struct diesel::types::Integer">Integer</a>;</span></code><span class='out-of-band'>
 </span></li>
-<li><code>impl Add for <a class='struct' href='../../../diesel/types/struct.BigInt.html' title='diesel::types::BigInt'>BigInt</a></code><span class='out-of-band'>
+<li><code>impl Add for <a class="struct" href="../../../diesel/types/struct.BigInt.html" title="struct diesel::types::BigInt">BigInt</a><span class="where fmt-newline">  type <a href='#associatedtype.Rhs' class="type">Rhs</a> = <a class="struct" href="../../../diesel/types/struct.BigInt.html" title="struct diesel::types::BigInt">BigInt</a>;</span><span class="where fmt-newline">  type <a href='#associatedtype.Output' class="type">Output</a> = <a class="struct" href="../../../diesel/types/struct.BigInt.html" title="struct diesel::types::BigInt">BigInt</a>;</span></code><span class='out-of-band'>
 </span></li>
-<li><code>impl Add for <a class='struct' href='../../../diesel/types/struct.Float.html' title='diesel::types::Float'>Float</a></code><span class='out-of-band'>
+<li><code>impl Add for <a class="struct" href="../../../diesel/types/struct.Float.html" title="struct diesel::types::Float">Float</a><span class="where fmt-newline">  type <a href='#associatedtype.Rhs' class="type">Rhs</a> = <a class="struct" href="../../../diesel/types/struct.Float.html" title="struct diesel::types::Float">Float</a>;</span><span class="where fmt-newline">  type <a href='#associatedtype.Output' class="type">Output</a> = <a class="struct" href="../../../diesel/types/struct.Float.html" title="struct diesel::types::Float">Float</a>;</span></code><span class='out-of-band'>
 </span></li>
-<li><code>impl Add for <a class='struct' href='../../../diesel/types/struct.Double.html' title='diesel::types::Double'>Double</a></code><span class='out-of-band'>
+<li><code>impl Add for <a class="struct" href="../../../diesel/types/struct.Double.html" title="struct diesel::types::Double">Double</a><span class="where fmt-newline">  type <a href='#associatedtype.Rhs' class="type">Rhs</a> = <a class="struct" href="../../../diesel/types/struct.Double.html" title="struct diesel::types::Double">Double</a>;</span><span class="where fmt-newline">  type <a href='#associatedtype.Output' class="type">Output</a> = <a class="struct" href="../../../diesel/types/struct.Double.html" title="struct diesel::types::Double">Double</a>;</span></code><span class='out-of-band'>
 </span></li>
-<li><code>impl Add for <a class='struct' href='../../../diesel/types/struct.Numeric.html' title='diesel::types::Numeric'>Numeric</a></code><span class='out-of-band'>
+<li><code>impl Add for <a class="struct" href="../../../diesel/types/struct.Numeric.html" title="struct diesel::types::Numeric">Numeric</a><span class="where fmt-newline">  type <a href='#associatedtype.Rhs' class="type">Rhs</a> = <a class="struct" href="../../../diesel/types/struct.Numeric.html" title="struct diesel::types::Numeric">Numeric</a>;</span><span class="where fmt-newline">  type <a href='#associatedtype.Output' class="type">Output</a> = <a class="struct" href="../../../diesel/types/struct.Numeric.html" title="struct diesel::types::Numeric">Numeric</a>;</span></code><span class='out-of-band'>
 </span></li>
-<li><code>impl Add for <a class='struct' href='../../../diesel/types/struct.Timestamp.html' title='diesel::types::Timestamp'>Timestamp</a></code><span class='out-of-band'>
+<li><code>impl Add for <a class="struct" href="../../../diesel/types/struct.Timestamp.html" title="struct diesel::types::Timestamp">Timestamp</a><span class="where fmt-newline">  type <a href='#associatedtype.Rhs' class="type">Rhs</a> = <a class="struct" href="../../../diesel/types/struct.Interval.html" title="struct diesel::types::Interval">Interval</a>;</span><span class="where fmt-newline">  type <a href='#associatedtype.Output' class="type">Output</a> = <a class="struct" href="../../../diesel/types/struct.Timestamp.html" title="struct diesel::types::Timestamp">Timestamp</a>;</span></code><span class='out-of-band'>
 </span></li>
-<li><code>impl Add for <a class='struct' href='../../../diesel/types/struct.Date.html' title='diesel::types::Date'>Date</a></code><span class='out-of-band'>
+<li><code>impl Add for <a class="struct" href="../../../diesel/types/struct.Date.html" title="struct diesel::types::Date">Date</a><span class="where fmt-newline">  type <a href='#associatedtype.Rhs' class="type">Rhs</a> = <a class="struct" href="../../../diesel/types/struct.Interval.html" title="struct diesel::types::Interval">Interval</a>;</span><span class="where fmt-newline">  type <a href='#associatedtype.Output' class="type">Output</a> = <a class="struct" href="../../../diesel/types/struct.Timestamp.html" title="struct diesel::types::Timestamp">Timestamp</a>;</span></code><span class='out-of-band'>
 </span></li>
 </ul><script type="text/javascript" async
                          src="../../../implementors/diesel/types/ops/trait.Add.js">
@@ -132,7 +137,6 @@
         window.rootPath = "../../../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../../../jquery.js"></script>
     <script src="../../../main.js"></script>
     <script defer src="../../../search-index.js"></script>
 </body>

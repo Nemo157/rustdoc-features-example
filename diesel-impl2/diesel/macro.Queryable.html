@@ -9,6 +9,7 @@
 
     <title>diesel::Queryable - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../normalize.css">
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc macro">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -42,30 +43,80 @@
         </form>
     </nav>
 
-    <section id='main' class="content macro">
-<h1 class='fqn'><span class='in-band'>Macro <a href='index.html'>diesel</a>::<wbr><a class='macro' href=''>Queryable</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Macro <a href='index.html'>diesel</a>::<wbr><a class="macro" href=''>Queryable</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-4966' class='srclink' href='../src/diesel/src/macros/queryable.rs.html#24-28' title='goto source code'>[src]</a></span></h1>
-<pre class='rust macro'>
-<span class='macro'>macro_rules</span><span class='macro'>!</span> <span class='ident'>Queryable</span> {
-    ($(<span class='macro-nonterminal'>$</span><span class='macro-nonterminal'>args</span>:<span class='ident'>tt</span>)<span class='op'>*</span>) <span class='op'>=&gt;</span> { ... };
+               </span><a class='srclink' href='../src/diesel/macros/queryable.rs.html#24-158' title='goto source code'>[src]</a></span></h1>
+<pre class="rust macro">
+<span class="macro">macro_rules</span><span class="macro">!</span> <span class="ident">Queryable</span> {
+    (() $(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">body</span>:<span class="ident">tt</span>)<span class="kw-2">*</span>) <span class="op">=&gt;</span> { ... };
+    (
+        $(<span class="attribute">#[<span class="macro-nonterminal">$</span><span class="macro-nonterminal">ignore</span>:<span class="ident">meta</span>]</span>)<span class="op">*</span>
+        $(<span class="kw">pub</span>)<span class="op">*</span> <span class="kw">struct</span> $(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">body</span>:<span class="ident">tt</span>)<span class="op">*</span>
+    ) <span class="op">=&gt;</span> { ... };
+    (
+        (
+            <span class="ident">struct_name</span> <span class="op">=</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">struct_name</span>:<span class="ident">ident</span>,
+            $(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">headers</span>:<span class="ident">tt</span>)<span class="op">*</span>
+        ),
+        <span class="ident">fields</span> <span class="op">=</span> [$({
+            <span class="ident">field_name</span>: <span class="macro-nonterminal">$</span><span class="macro-nonterminal">field_name</span>:<span class="ident">ident</span>,
+            <span class="ident">column_name</span>: <span class="macro-nonterminal">$</span><span class="macro-nonterminal">column_name</span>:<span class="ident">ident</span>,
+            <span class="ident">field_ty</span>: <span class="macro-nonterminal">$</span><span class="macro-nonterminal">field_ty</span>:<span class="ident">ty</span>,
+            <span class="ident">field_kind</span>: <span class="macro-nonterminal">$</span><span class="macro-nonterminal">field_kind</span>:<span class="ident">ident</span>,
+        })<span class="op">+</span>],
+    ) <span class="op">=&gt;</span> { ... };
+    (
+        <span class="macro-nonterminal">$</span><span class="macro-nonterminal">headers</span>:<span class="ident">tt</span>,
+        <span class="ident">fields</span> <span class="op">=</span> [$({
+            <span class="ident">column_name</span>: <span class="macro-nonterminal">$</span><span class="macro-nonterminal">column_name</span>:<span class="ident">ident</span>,
+            <span class="ident">field_ty</span>: <span class="macro-nonterminal">$</span><span class="macro-nonterminal">field_ty</span>:<span class="ident">ty</span>,
+            <span class="ident">field_kind</span>: <span class="macro-nonterminal">$</span><span class="macro-nonterminal">field_kind</span>:<span class="ident">ident</span>,
+        })<span class="op">+</span>],
+    ) <span class="op">=&gt;</span> { ... };
+    (
+        (
+            <span class="ident">struct_name</span> <span class="op">=</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">struct_name</span>:<span class="ident">ident</span>,
+            $(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">headers</span>:<span class="ident">tt</span>)<span class="op">*</span>
+        ),
+        <span class="ident">fields</span> <span class="op">=</span> [$({
+            <span class="ident">field_ty</span>: <span class="macro-nonterminal">$</span><span class="macro-nonterminal">field_ty</span>:<span class="ident">ty</span>,
+            <span class="ident">field_kind</span>: <span class="macro-nonterminal">$</span><span class="macro-nonterminal">field_kind</span>:<span class="ident">ident</span>,
+        })<span class="op">+</span>],
+    ) <span class="op">=&gt;</span> { ... };
+    (
+        <span class="ident">struct_ty</span> <span class="op">=</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">struct_ty</span>:<span class="ident">ty</span>,
+        <span class="ident">generics</span> <span class="op">=</span> ($(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">generics</span>:<span class="ident">ident</span>),<span class="kw-2">*</span>),
+        <span class="ident">lifetimes</span> <span class="op">=</span> ($(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">lifetimes</span>:<span class="ident">tt</span>),<span class="kw-2">*</span>),
+        <span class="ident">row_ty</span> <span class="op">=</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">row_ty</span>:<span class="ident">ty</span>,
+        <span class="ident">row_pat</span> <span class="op">=</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">row_pat</span>:<span class="ident">pat</span>,
+        <span class="ident">build_expr</span> <span class="op">=</span> <span class="macro-nonterminal">$</span><span class="macro-nonterminal">build_expr</span>:<span class="ident">expr</span>,
+    ) <span class="op">=&gt;</span> { ... };
+    (
+        <span class="macro-nonterminal">$</span><span class="macro-nonterminal">struct_name</span>:<span class="ident">ident</span> <span class="op">&lt;</span>$(<span class="macro-nonterminal">$</span><span class="macro-nonterminal">generics</span>:<span class="ident">ident</span>),<span class="kw-2">*</span><span class="op">&gt;</span>
+        <span class="macro-nonterminal">$</span><span class="macro-nonterminal">body</span>:<span class="ident">tt</span> $(;)<span class="op">*</span>
+    ) <span class="op">=&gt;</span> { ... };
+    (
+        <span class="macro-nonterminal">$</span><span class="macro-nonterminal">struct_name</span>:<span class="ident">ident</span>
+        <span class="macro-nonterminal">$</span><span class="macro-nonterminal">body</span>:<span class="ident">tt</span> $(;)<span class="op">*</span>
+    ) <span class="op">=&gt;</span> { ... };
 }</pre>
 <div class='docblock'><p>Implements the <a href="query_source/trait.Queryable.html"><code>Queryable</code></a> trait for a given struct. This macro
 should be called by copy/pasting the definition of the struct into it.</p>
 
 <h1 id='example' class='section-header'><a href='#example'>Example</a></h1>
-<pre class='rust rust-example-rendered'>
-<span class='kw'>struct</span> <span class='ident'>User</span> {
-    <span class='ident'>name</span>: <span class='ident'>String</span>,
-    <span class='ident'>hair_color</span>: <span class='prelude-ty'>Option</span><span class='op'>&lt;</span><span class='ident'>String</span><span class='op'>&gt;</span>,
+<pre class="rust rust-example-rendered">
+<span class="kw">struct</span> <span class="ident">User</span> {
+    <span class="ident">name</span>: <span class="ident">String</span>,
+    <span class="ident">hair_color</span>: <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">String</span><span class="op">&gt;</span>,
 }
 
-<span class='macro'>Queryable</span><span class='macro'>!</span> {
-    <span class='kw'>struct</span> <span class='ident'>User</span> {
-        <span class='ident'>name</span>: <span class='ident'>String</span>,
-        <span class='ident'>hair_color</span>: <span class='prelude-ty'>Option</span><span class='op'>&lt;</span><span class='ident'>String</span><span class='op'>&gt;</span>,
+<span class="macro">Queryable</span><span class="macro">!</span> {
+    <span class="kw">struct</span> <span class="ident">User</span> {
+        <span class="ident">name</span>: <span class="ident">String</span>,
+        <span class="ident">hair_color</span>: <span class="prelude-ty">Option</span><span class="op">&lt;</span><span class="ident">String</span><span class="op">&gt;</span>,
     }
 }</pre>
 </div></section>
@@ -125,7 +176,6 @@ should be called by copy/pasting the definition of the struct into it.</p>
         window.rootPath = "../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../jquery.js"></script>
     <script src="../main.js"></script>
     <script defer src="../search-index.js"></script>
 </body>

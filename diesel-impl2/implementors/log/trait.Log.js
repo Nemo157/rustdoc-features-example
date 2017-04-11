@@ -1,5 +1,7 @@
 (function() {var implementors = {};
-implementors["diesel"] = ["impl <a class='trait' href='https://doc.rust-lang.org/log/log/trait.Log.html' title='log::Log'>Log</a> for <a class='struct' href='http://doc.rust-lang.org/env_logger/env_logger/struct.Logger.html' title='env_logger::Logger'>Logger</a>",];
+implementors["diesel"] = ["impl <a class=\"trait\" href=\"log/trait.Log.html\" title=\"trait log::Log\">Log</a> for <a class=\"struct\" href=\"env_logger/struct.Logger.html\" title=\"struct env_logger::Logger\">Logger</a>",];
+implementors["env_logger"] = ["impl <a class=\"trait\" href=\"log/trait.Log.html\" title=\"trait log::Log\">Log</a> for <a class=\"struct\" href=\"env_logger/struct.Logger.html\" title=\"struct env_logger::Logger\">Logger</a>",];
+implementors["quickcheck"] = ["impl <a class=\"trait\" href=\"log/trait.Log.html\" title=\"trait log::Log\">Log</a> for <a class=\"struct\" href=\"env_logger/struct.Logger.html\" title=\"struct env_logger::Logger\">Logger</a>",];
 
             if (window.register_implementors) {
                 window.register_implementors(implementors);

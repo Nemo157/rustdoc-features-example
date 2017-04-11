@@ -9,6 +9,7 @@
 
     <title>diesel::migrations::find_migrations_directory - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc fn">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -42,13 +43,13 @@
         </form>
     </nav>
 
-    <section id='main' class="content fn">
-<h1 class='fqn'><span class='in-band'>Function <a href='../index.html'>diesel</a>::<wbr><a href='index.html'>migrations</a>::<wbr><a class='fn' href=''>find_migrations_directory</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Function <a href='../index.html'>diesel</a>::<wbr><a href='index.html'>migrations</a>::<wbr><a class="fn" href=''>find_migrations_directory</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-4008' class='srclink' href='../../src/diesel/src/migrations/mod.rs.html#250-252' title='goto source code'>[src]</a></span></h1>
-<pre class='rust fn'>pub fn find_migrations_directory() -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/std/path/struct.PathBuf.html' title='std::path::PathBuf'>PathBuf</a>, <a class='enum' href='../../diesel/migrations/enum.MigrationError.html' title='diesel::migrations::MigrationError'>MigrationError</a>&gt;</pre><div class='docblock'><p>Returns the directory containing migrations. Will look at for
+               </span><a class='srclink' href='../../src/diesel/migrations/mod.rs.html#250-252' title='goto source code'>[src]</a></span></h1>
+<pre class='rust fn'>pub fn find_migrations_directory() -&gt; <a class="enum" href="https://doc.rust-lang.org/nightly/core/result/enum.Result.html" title="enum core::result::Result">Result</a>&lt;<a class="struct" href="https://doc.rust-lang.org/nightly/std/path/struct.PathBuf.html" title="struct std::path::PathBuf">PathBuf</a>, <a class="enum" href="../../diesel/migrations/enum.MigrationError.html" title="enum diesel::migrations::MigrationError">MigrationError</a>&gt;</pre><div class='docblock'><p>Returns the directory containing migrations. Will look at for
 $PWD/migrations. If it is not found, it will search the parents of the
 current directory, until it reaches the root directory.  Returns
 <code>MigrationError::MigrationDirectoryNotFound</code> if no directory is found.</p>
@@ -109,7 +110,6 @@ current directory, until it reaches the root directory.  Returns
         window.rootPath = "../../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     <script defer src="../../search-index.js"></script>
 </body>

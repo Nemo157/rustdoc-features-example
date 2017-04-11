@@ -9,6 +9,7 @@
 
     <title>rustdoc_features_example::a::FooTrait - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc trait">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../index.html'>rustdoc_features_example</a>::<wbr><a href='index.html'>a</a></p><script>window.sidebarCurrent = {name: 'FooTrait', ty: 'trait', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+        <p class='location'>Trait FooTrait</p><div class="block items"><ul><li><a href="#provided-methods">Provided Methods</a></li><li><a href="#implementors">Implementors</a></li></ul></div><p class='location'><a href='../index.html'>rustdoc_features_example</a>::<wbr><a href='index.html'>a</a></p><script>window.sidebarCurrent = {name: 'FooTrait', ty: 'trait', relpath: ''};</script><script defer src="sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,28 +43,32 @@
         </form>
     </nav>
 
-    <section id='main' class="content trait">
-<h1 class='fqn'><span class='in-band'>Trait <a href='../index.html'>rustdoc_features_example</a>::<wbr><a href='index.html'>a</a>::<wbr><a class='trait' href=''>FooTrait</a></span><span class='out-of-band'><div class='cfg-feature' title='Requires feature foo'>foo</div><div class='cfg-feature cfg-feature-introduced' title='Requires feature foo (introduced)'>foo</div><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Trait <a href='../index.html'>rustdoc_features_example</a>::<wbr><a href='index.html'>a</a>::<wbr><a class="trait" href=''>FooTrait</a></span><span class='out-of-band'><div class='cfg-feature' title='Requires feature foo'>foo</div><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-13' class='srclink' href='../../src/rustdoc_features_example/src/a.rs.html#47-58' title='goto source code'>[src]</a></span></h1>
+               </span><a class='srclink' href='../../src/rustdoc_features_example/a.rs.html#47-58' title='goto source code'>[src]</a></span></h1>
 <pre class='rust trait'>pub trait FooTrait {
     fn <a href='#method.foo' class='fnname'>foo</a>(&amp;self) { ... }
-    fn <a href='#method.foobar' class='fnname'>foobar</a>(&amp;self) { ... }
+<div class='item-spacer'></div>    fn <a href='#method.foobar' class='fnname'>foobar</a>(&amp;self) { ... }
 }</pre><div class='docblock'><p>A public trait that is only included in the crate with feature <code>foo</code>.</p>
 </div>
-            <h2 id='provided-methods'>Provided Methods</h2>
+            <h2 id='provided-methods' class='small-section-header'>
+              Provided Methods<a href='#provided-methods' class='anchor'></a>
+            </h2>
             <div class='methods'>
-        <h3 id='method.foo' class='method stab '><span id='foo.v' class='invisible'><code>fn <a href='#method.foo' class='fnname'>foo</a>(&amp;self)</code><span class='out-of-band'><div class='cfg-feature' title='Requires feature foo'>foo</div></span></span></h3><div class='docblock'><p>A trait method that is always included in the crate.
+        <h3 id='method.foo' class='method'><span id='foo.v' class='invisible'><code>fn <a href='#method.foo' class='fnname'>foo</a>(&amp;self)</code><span class='out-of-band'></span></span></h3><div class='docblock'><p>A trait method that is always included in the crate.
 (if the parent trait is)</p>
-</div><h3 id='method.foobar' class='method stab '><span id='foobar.v' class='invisible'><code>fn <a href='#method.foobar' class='fnname'>foobar</a>(&amp;self)</code><span class='out-of-band'><div class='cfg-feature' title='Requires features foo, bar'>foo, bar</div><div class='cfg-feature cfg-feature-introduced' title='Requires feature bar (introduced)'>bar</div></span></span></h3><div class='docblock'><p>A trait method that is only included in the crate with feature <code>bar</code>.
+</div><h3 id='method.foobar' class='method'><span id='foobar.v' class='invisible'><code>fn <a href='#method.foobar' class='fnname'>foobar</a>(&amp;self)</code><span class='out-of-band'><div class='cfg-feature cfg-feature-introduced' title='Requires feature bar'>bar</div></span></span></h3><div class='docblock'><p>A trait method that is only included in the crate with feature <code>bar</code>.
 (if the parent trait is)</p>
 </div></div>
-        <h2 id='implementors'>Implementors</h2>
+        <h2 id='implementors' class='small-section-header'>
+          Implementors<a href='#implementors' class='anchor'></a>
+        </h2>
         <ul class='item-list' id='implementors-list'>
-    <li><code>impl FooTrait for <a class='struct' href='../../rustdoc_features_example/a/struct.A.html' title='rustdoc_features_example::a::A'>A</a></code><span class='out-of-band'>
-<div class='cfg-feature' title='Requires feature foo'>foo</div><div class='cfg-feature cfg-feature-introduced' title='Requires feature foo (introduced)'>foo</div></span></li>
+    <li><code>impl FooTrait for <a class="struct" href="../../rustdoc_features_example/a/struct.A.html" title="struct rustdoc_features_example::a::A">A</a></code><span class='out-of-band'>
+<div class='cfg-feature' title='Requires feature foo'>foo</div></span></li>
 </ul><script type="text/javascript" async
                          src="../../implementors/rustdoc_features_example/a/trait.FooTrait.js">
                  </script></section>
@@ -123,7 +128,6 @@
         window.rootPath = "../../";
         window.currentCrate = "rustdoc_features_example";
     </script>
-    <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     <script defer src="../../search-index.js"></script>
 </body>

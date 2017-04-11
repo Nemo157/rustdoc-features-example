@@ -9,6 +9,7 @@
 
     <title>rustdoc_features_example::foo::Foo - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc struct">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../index.html'>rustdoc_features_example</a>::<wbr><a href='index.html'>foo</a></p><script>window.sidebarCurrent = {name: 'Foo', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+        <p class='location'>Struct Foo</p><div class="block items"><ul><li><a href="#fields">Fields</a></li><li><a href="#methods">Methods</a></li><li><a href="#implementations">Trait Implementations</a></li></ul></div><p class='location'><a href='../index.html'>rustdoc_features_example</a>::<wbr><a href='index.html'>foo</a></p><script>window.sidebarCurrent = {name: 'Foo', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,48 +43,59 @@
         </form>
     </nav>
 
-    <section id='main' class="content struct">
-<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rustdoc_features_example</a>::<wbr><a href='index.html'>foo</a>::<wbr><a class='struct' href=''>Foo</a></span><span class='out-of-band'><div class='cfg-feature' title='Requires feature foo'>foo</div><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>rustdoc_features_example</a>::<wbr><a href='index.html'>foo</a>::<wbr><a class="struct" href=''>Foo</a></span><span class='out-of-band'><div class='cfg-feature' title='Requires feature foo'>foo</div><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-46' class='srclink' href='../../src/rustdoc_features_example/src/foo.rs.html#5-14' title='goto source code'>[src]</a></span></h1>
+               </span><a class='srclink' href='../../src/rustdoc_features_example/foo.rs.html#5-14' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Foo {
-    pub foo: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>,
-    pub foobar: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>,
+    pub foo: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
+    pub foobar: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a>,
 }</pre><div class='docblock'><p>A public struct that is always included in the crate.
 (if the parent module is)</p>
-</div><h2 class='fields'>Fields</h2><span id='structfield.foo' class='structfield'>
-                           <span id='foo.v' class='invisible'>
-                           <code>foo: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a></code><span class='out-of-band'><div class='cfg-feature' title='Requires feature foo'>foo</div></span></span></span><span class='stab '></span><div class='docblock'><p>A public field that is always included in the crate.
+</div><h2 id='fields' class='fields small-section-header'>
+                       Fields<a href='#fields' class='anchor'></a></h2><span id="structfield.foo" class="structfield small-section-header">
+                           <a href="#structfield.foo" class="anchor field"></a>
+                           <span id="foo.v" class='invisible'>
+                           <code>foo: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code><span class='out-of-band'></span></span></span><div class='docblock'><p>A public field that is always included in the crate.
 (if the parent module is)</p>
-</div><span id='structfield.foobar' class='structfield'>
-                           <span id='foobar.v' class='invisible'>
-                           <code>foobar: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a></code><span class='out-of-band'><div class='cfg-feature' title='Requires features foo, bar'>foo, bar</div><div class='cfg-feature cfg-feature-introduced' title='Requires feature bar (introduced)'>bar</div></span></span></span><span class='stab '></span><div class='docblock'><p>A public field that is only included in the crate with feature <code>bar</code>.
+</div><span id="structfield.foobar" class="structfield small-section-header">
+                           <a href="#structfield.foobar" class="anchor field"></a>
+                           <span id="foobar.v" class='invisible'>
+                           <code>foobar: <a class="primitive" href="https://doc.rust-lang.org/nightly/std/primitive.u8.html">u8</a></code><span class='out-of-band'><div class='cfg-feature cfg-feature-introduced' title='Requires feature bar'>bar</div></span></span></span><div class='docblock'><p>A public field that is only included in the crate with feature <code>bar</code>.
 (if the parent module is)</p>
-</div><h2 id='methods'>Methods</h2><h3 class='impl'><span class='in-band'><code>impl <a class='struct' href='../../rustdoc_features_example/foo/struct.Foo.html' title='rustdoc_features_example::foo::Foo'>Foo</a></code></span><span class='out-of-band'><div class='ghost'></div><div class='cfg-feature' title='Requires feature foo'>foo</div><a id='src-61' class='srclink' href='../../src/rustdoc_features_example/src/foo.rs.html#58-69' title='goto source code'>[src]</a></span></h3>
-<div class='impl-items'><h4 id='method.foo' class='method'><span id='foo.v-1' class='invisible'><code>fn <a href='#method.foo' class='fnname'>foo</a>(&amp;self)</code><span class='out-of-band'><div class='cfg-feature' title='Requires feature foo'>foo</div></span></span></h4>
+</div>
+                    <h2 id='methods' class='small-section-header'>
+                      Methods<a href='#methods' class='anchor'></a>
+                    </h2>
+                <h3 id='impl' class='impl'><span class='in-band'><code>impl <a class="struct" href="../../rustdoc_features_example/foo/struct.Foo.html" title="struct rustdoc_features_example::foo::Foo">Foo</a></code><a href='#impl' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rustdoc_features_example/foo.rs.html#58-69' title='goto source code'>[src]</a></span></h3>
+<div class='impl-items'><h4 id='method.foo' class="method"><span id='foo.v-1' class='invisible'><code>pub fn <a href='#method.foo' class='fnname'>foo</a>(&amp;self)</code><span class='out-of-band'></span></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rustdoc_features_example/foo.rs.html#61-62' title='goto source code'>[src]</a></span></h4>
 <div class='docblock'><p>A public method that is always included in the crate.
 (if the parent module is)</p>
-</div><h4 id='method.foobar' class='method'><span id='foobar.v-1' class='invisible'><code>fn <a href='#method.foobar' class='fnname'>foobar</a>(&amp;self)</code><span class='out-of-band'><div class='cfg-feature' title='Requires features foo, bar'>foo, bar</div><div class='cfg-feature cfg-feature-introduced' title='Requires feature bar (introduced)'>bar</div></span></span></h4>
+</div><h4 id='method.foobar' class="method"><span id='foobar.v-1' class='invisible'><code>pub fn <a href='#method.foobar' class='fnname'>foobar</a>(&amp;self)</code><span class='out-of-band'><div class='cfg-feature cfg-feature-introduced' title='Requires feature bar'>bar</div></span></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rustdoc_features_example/foo.rs.html#67-68' title='goto source code'>[src]</a></span></h4>
 <div class='docblock'><p>A public method that is only included in the crate with feature <code>bar</code>.
 (if the parent module is)</p>
-</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../../rustdoc_features_example/foo/trait.FooTrait.html' title='rustdoc_features_example::foo::FooTrait'>FooTrait</a> for <a class='struct' href='../../rustdoc_features_example/foo/struct.Foo.html' title='rustdoc_features_example::foo::Foo'>Foo</a></code></span><span class='out-of-band'><div class='ghost'></div><div class='cfg-feature' title='Requires feature foo'>foo</div><a id='src-66' class='srclink' href='../../src/rustdoc_features_example/src/foo.rs.html#73-84' title='goto source code'>[src]</a></span></h3>
+</div></div>
+            <h2 id='implementations' class='small-section-header'>
+              Trait Implementations<a href='#implementations' class='anchor'></a>
+            </h2>
+        <h3 id='impl-FooTrait' class='impl'><span class='in-band'><code>impl <a class="trait" href="../../rustdoc_features_example/foo/trait.FooTrait.html" title="trait rustdoc_features_example::foo::FooTrait">FooTrait</a> for <a class="struct" href="../../rustdoc_features_example/foo/struct.Foo.html" title="struct rustdoc_features_example::foo::Foo">Foo</a></code><a href='#impl-FooTrait' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rustdoc_features_example/foo.rs.html#73-84' title='goto source code'>[src]</a></span></h3>
 <div class='docblock'><p>A trait impl that is always included in the crate.
 (if the parent module is)</p>
-</div><div class='impl-items'><h4 id='method.foo-1' class='method'><span id='foo.v-2' class='invisible'><code>fn <a href='../../rustdoc_features_example/foo/trait.FooTrait.html#method.foo' class='fnname'>foo</a>(&amp;self)</code><span class='out-of-band'><div class='cfg-feature' title='Requires feature foo'>foo</div></span></span></h4>
+</div><div class='impl-items'><h4 id='method.foo-1' class="method"><span id='foo.v-2' class='invisible'><code>fn <a href='../../rustdoc_features_example/foo/trait.FooTrait.html#method.foo' class='fnname'>foo</a>(&amp;self)</code><span class='out-of-band'></span></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rustdoc_features_example/foo.rs.html#76-77' title='goto source code'>[src]</a></span></h4>
 <div class='docblock'><p>A trait method impl that is always included in the crate.
 (if the parent trait is)</p>
-</div><h4 id='method.foobar-1' class='method'><span id='foobar.v-2' class='invisible'><code>fn <a href='../../rustdoc_features_example/foo/trait.FooTrait.html#method.foobar' class='fnname'>foobar</a>(&amp;self)</code><span class='out-of-band'><div class='cfg-feature' title='Requires features foo, bar'>foo, bar</div><div class='cfg-feature cfg-feature-introduced' title='Requires feature bar (introduced)'>bar</div></span></span></h4>
+</div><h4 id='method.foobar-1' class="method"><span id='foobar.v-2' class='invisible'><code>fn <a href='../../rustdoc_features_example/foo/trait.FooTrait.html#method.foobar' class='fnname'>foobar</a>(&amp;self)</code><span class='out-of-band'><div class='cfg-feature cfg-feature-introduced' title='Requires feature bar'>bar</div></span></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rustdoc_features_example/foo.rs.html#82-83' title='goto source code'>[src]</a></span></h4>
 <div class='docblock'><p>A trait method impl that is only included in the crate with feature <code>bar</code>.
 (if the parent trait is)</p>
-</div></div><h3 class='impl'><span class='in-band'><code>impl <a class='trait' href='../../rustdoc_features_example/foo/trait.FooBarTrait.html' title='rustdoc_features_example::foo::FooBarTrait'>FooBarTrait</a> for <a class='struct' href='../../rustdoc_features_example/foo/struct.Foo.html' title='rustdoc_features_example::foo::Foo'>Foo</a></code></span><span class='out-of-band'><div class='ghost'></div><div class='cfg-feature' title='Requires features foo, bar'>foo, bar</div><div class='cfg-feature cfg-feature-introduced' title='Requires feature bar (introduced)'>bar</div><a id='src-71' class='srclink' href='../../src/rustdoc_features_example/src/foo.rs.html#89-99' title='goto source code'>[src]</a></span></h3>
+</div></div><h3 id='impl-FooBarTrait' class='impl'><span class='in-band'><code>impl <a class="trait" href="../../rustdoc_features_example/foo/trait.FooBarTrait.html" title="trait rustdoc_features_example::foo::FooBarTrait">FooBarTrait</a> for <a class="struct" href="../../rustdoc_features_example/foo/struct.Foo.html" title="struct rustdoc_features_example::foo::Foo">Foo</a></code><a href='#impl-FooBarTrait' class='anchor'></a></span><span class='out-of-band'><div class='ghost'></div><div class='cfg-feature cfg-feature-introduced' title='Requires feature bar'>bar</div><a class='srclink' href='../../src/rustdoc_features_example/foo.rs.html#89-99' title='goto source code'>[src]</a></span></h3>
 <div class='docblock'><p>A trait impl that is only included in the crate with feature <code>bar</code>.
 (if the parent module is)</p>
-</div><div class='impl-items'><h4 id='method.foo-2' class='method'><span id='foo.v-3' class='invisible'><code>fn <a href='../../rustdoc_features_example/foo/trait.FooBarTrait.html#method.foo' class='fnname'>foo</a>(&amp;self)</code><span class='out-of-band'><div class='cfg-feature' title='Requires features foo, bar'>foo, bar</div></span></span></h4>
+</div><div class='impl-items'><h4 id='method.foo-2' class="method"><span id='foo.v-3' class='invisible'><code>fn <a href='../../rustdoc_features_example/foo/trait.FooBarTrait.html#method.foo' class='fnname'>foo</a>(&amp;self)</code><span class='out-of-band'></span></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rustdoc_features_example/foo.rs.html#92-93' title='goto source code'>[src]</a></span></h4>
 <div class='docblock'><p>A trait method impl that is always included in the crate.
 (if the parent trait is)</p>
-</div><h4 id='method.foobar-2' class='method'><span id='foobar.v-3' class='invisible'><code>fn <a href='../../rustdoc_features_example/foo/trait.FooBarTrait.html#method.foobar' class='fnname'>foobar</a>(&amp;self)</code><span class='out-of-band'><div class='cfg-feature' title='Requires features foo, bar'>foo, bar</div></span></span></h4>
+</div><h4 id='method.foobar-2' class="method"><span id='foobar.v-3' class='invisible'><code>fn <a href='../../rustdoc_features_example/foo/trait.FooBarTrait.html#method.foobar' class='fnname'>foobar</a>(&amp;self)</code><span class='out-of-band'></span></span><span class='out-of-band'><div class='ghost'></div><a class='srclink' href='../../src/rustdoc_features_example/foo.rs.html#97-98' title='goto source code'>[src]</a></span></h4>
 <div class='docblock'><p>A trait method impl that is always included in the crate.
 (if the parent trait is)</p>
 </div></div></section>
@@ -143,7 +155,6 @@
         window.rootPath = "../../";
         window.currentCrate = "rustdoc_features_example";
     </script>
-    <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     <script defer src="../../search-index.js"></script>
 </body>

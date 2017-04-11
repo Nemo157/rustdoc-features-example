@@ -9,6 +9,7 @@
 
     <title>diesel::expression - Rust</title>
 
+    <link rel="stylesheet" type="text/css" href="../../normalize.css">
     <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../../main.css">
     
@@ -16,7 +17,7 @@
     
     
 </head>
-<body class="rustdoc">
+<body class="rustdoc mod">
     <!--[if lte IE 8]>
     <div class="warning">
         This old browser is unsupported and will most likely display funky
@@ -28,7 +29,7 @@
 
     <nav class="sidebar">
         
-        <p class='location'><a href='../index.html'>diesel</a></p><script>window.sidebarCurrent = {name: 'expression', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
+        <p class='location'>Module expression</p><div class="block items"><ul><li><a href="#reexports">Reexports</a></li><li><a href="#modules">Modules</a></li><li><a href="#traits">Traits</a></li></ul></div><p class='location'><a href='../index.html'>diesel</a></p><script>window.sidebarCurrent = {name: 'expression', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script>
     </nav>
 
     <nav class="sub">
@@ -42,12 +43,12 @@
         </form>
     </nav>
 
-    <section id='main' class="content mod">
-<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>diesel</a>::<wbr><a class='mod' href=''>expression</a></span><span class='out-of-band'><span id='render-detail'>
+    <section id='main' class="content">
+<h1 class='fqn'><span class='in-band'>Module <a href='../index.html'>diesel</a>::<wbr><a class="mod" href=''>expression</a></span><span class='out-of-band'><span id='render-detail'>
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-178' class='srclink' href='../../src/diesel/src/expression/mod.rs.html#1-167' title='goto source code'>[src]</a></span></h1>
+               </span><a class='srclink' href='../../src/diesel/expression/mod.rs.html#1-167' title='goto source code'>[src]</a></span></h1>
 <div class='docblock'><p>AST types representing various typed SQL expressions. Almost all types
 implement either <a href="trait.Expression.html"><code>Expression</code></a> or
 <a href="trait.AsExpression.html"><code>AsExpression</code></a>.</p>
@@ -64,12 +65,11 @@ numeric operators on types which have been passed to
 also implement <a href="trait.AsExpression.html"><code>AsExpression</code></a>, allowing it to be
 used as an argument to any of the methods described here.</p>
 </div><h2 id='reexports' class='section-header'><a href="#reexports">Reexports</a></h2>
-<table><tr><td><code>pub use self::<a class='mod' href='../../diesel/expression/dsl/index.html' title='diesel::expression::dsl'>dsl</a>::*;</code></td></tr><tr><td><code>pub use self::<a class='mod'
-                                       href='./sql_literal/index.html'>sql_literal</a>::<a class='struct' href='../../diesel/expression/sql_literal/struct.SqlLiteral.html' title='diesel::expression::sql_literal::SqlLiteral'>SqlLiteral</a>;</code></td></tr></table><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table><tr><td><code>pub use self::<a class="mod" href="../../diesel/expression/dsl/index.html" title="mod diesel::expression::dsl">dsl</a>::*;</code></td></tr><tr><td><code>pub use self::<a class="mod" href="./sql_literal/index.html">sql_literal</a>::<a class="struct" href="../../diesel/expression/sql_literal/struct.SqlLiteral.html" title="struct diesel::expression::sql_literal::SqlLiteral">SqlLiteral</a>;</code></td></tr></table><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='mod' href='dsl/index.html'
-                                  title='diesel::expression::dsl'>dsl</a></td>
+                           <td><a class="mod" href="dsl/index.html"
+                                  title='mod diesel::expression::dsl'>dsl</a></td>
                            <td class='docblock-short'>
                                 <p>Reexports various top level functions and core extensions that are too
 generic to export by default. This module exists to conveniently glob import
@@ -80,8 +80,8 @@ in functions where you need them.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='mod' href='expression_methods/index.html'
-                                  title='diesel::expression::expression_methods'>expression_methods</a></td>
+                           <td><a class="mod" href="expression_methods/index.html"
+                                  title='mod diesel::expression::expression_methods'>expression_methods</a></td>
                            <td class='docblock-short'>
                                 <p>Adds various methods to construct new expressions. These traits are exported
 by default, and implemented automatically.</p>
@@ -91,8 +91,8 @@ by default, and implemented automatically.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='mod' href='helper_types/index.html'
-                                  title='diesel::expression::helper_types'>helper_types</a></td>
+                           <td><a class="mod" href="helper_types/index.html"
+                                  title='mod diesel::expression::helper_types'>helper_types</a></td>
                            <td class='docblock-short'>
                                 <p>The types in this module are all shorthand for <code>PredicateType&lt;Lhs, AsExpr&lt;Rhs, Lhs&gt;&gt;</code>. Since we often need to return concrete types, instead of
 a boxed trait object, these can be useful for writing concise return types.</p>
@@ -102,8 +102,8 @@ a boxed trait object, these can be useful for writing concise return types.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='mod' href='sql_literal/index.html'
-                                  title='diesel::expression::sql_literal'>sql_literal</a></td>
+                           <td><a class="mod" href="sql_literal/index.html"
+                                  title='mod diesel::expression::sql_literal'>sql_literal</a></td>
                            <td class='docblock-short'>
                                 
                                <span class='out-of-band'>
@@ -113,8 +113,8 @@ a boxed trait object, these can be useful for writing concise return types.</p>
                        </tr></table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
                        <tr class=' module-item'>
-                           <td><a class='trait' href='trait.AsExpression.html'
-                                  title='diesel::expression::AsExpression'>AsExpression</a></td>
+                           <td><a class="trait" href="trait.AsExpression.html"
+                                  title='trait diesel::expression::AsExpression'>AsExpression</a></td>
                            <td class='docblock-short'>
                                 <p>Describes how a type can be represented as an expression for a given type.
 These types couldn&#39;t just implement <a href="trait.Expression.html"><code>Expression</code></a>
@@ -128,8 +128,8 @@ directly, as many things can be used as an expression of multiple types.
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='trait' href='trait.BoxableExpression.html'
-                                  title='diesel::expression::BoxableExpression'>BoxableExpression</a></td>
+                           <td><a class="trait" href="trait.BoxableExpression.html"
+                                  title='trait diesel::expression::BoxableExpression'>BoxableExpression</a></td>
                            <td class='docblock-short'>
                                 <p>Helper trait used when boxing expressions. This exists to work around the
 fact that Rust will not let us use non-core types as bounds on a trait
@@ -140,8 +140,8 @@ object (you could not return <code>Box&lt;Expression+NonAggregate&gt;</code>)</p
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='trait' href='trait.Expression.html'
-                                  title='diesel::expression::Expression'>Expression</a></td>
+                           <td><a class="trait" href="trait.Expression.html"
+                                  title='trait diesel::expression::Expression'>Expression</a></td>
                            <td class='docblock-short'>
                                 <p>Represents a typed fragment of SQL. Apps should not need to implement this
 type directly, but it may be common to use this as type boundaries.
@@ -155,8 +155,8 @@ implementing this directly.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='trait' href='trait.NonAggregate.html'
-                                  title='diesel::expression::NonAggregate'>NonAggregate</a></td>
+                           <td><a class="trait" href="trait.NonAggregate.html"
+                                  title='trait diesel::expression::NonAggregate'>NonAggregate</a></td>
                            <td class='docblock-short'>
                                 <p>Marker trait to indicate that an expression does not include any aggregate
 functions. Used to ensure that aggregate expressions aren&#39;t mixed with
@@ -168,8 +168,8 @@ included in a where clause.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='trait' href='trait.SelectableExpression.html'
-                                  title='diesel::expression::SelectableExpression'>SelectableExpression</a></td>
+                           <td><a class="trait" href="trait.SelectableExpression.html"
+                                  title='trait diesel::expression::SelectableExpression'>SelectableExpression</a></td>
                            <td class='docblock-short'>
                                 <p>Indicates that an expression can be selected from a source. The second type
 argument is optional, but is used to indicate that the right side of a left
@@ -235,7 +235,6 @@ outer join is nullable, even if it wasn&#39;t before.</p>
         window.rootPath = "../../";
         window.currentCrate = "diesel";
     </script>
-    <script src="../../jquery.js"></script>
     <script src="../../main.js"></script>
     <script defer src="../../search-index.js"></script>
 </body>
