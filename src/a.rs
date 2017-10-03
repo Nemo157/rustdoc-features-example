@@ -84,7 +84,7 @@ impl A {
 
     #[cfg(all(feature = "foo", feature = "bar"))]
     /// A public method that is only included in the crate with features `foo` and `bar`.
-    pub fn foobar(&self) {
+    pub fn foobar2(&self) {
     }
 }
 
